@@ -4,108 +4,100 @@
         <title>What and Why</title>
 
         <section xml:id="section-intro-ds4e">
-            <title>Introduction to Data Science 4 Everyone</title>
+        <title>Introduction to Data Science 4 Everyone</title>
+        
+        <p>
+            Data Science 4 Everyone is a groundbreaking initiative dedicated to making data science education accessible, equitable, and effective for all K-12 students. We believe that in today's data-driven world, every student deserves the opportunity to develop critical data literacy skills that will serve them throughout their lives.
+        </p>
+
+        <p>
+            <em>Watch this introduction to learn more about our mission:</em>
+            This video provides an overview of Data Science 4 Everyone's approach to making data science education accessible and engaging for all students.
+        </p>
+
+        <video xml:id="video-ds4e-intro" youtube="KdXRyYOrros" />
+
+    </section>
+
+    <section xml:id="section-what-is-ds">
+        <title>What Exactly is Data Science?</title>
+        
+        <p>
+            Before diving into why data science education is crucial, it's important to understand what we mean by <term>data science</term>. Data science is the interdisciplinary field that uses scientific methods, algorithms, and systems to extract knowledge and insights from data. For K-12 students, this translates to developing skills in collecting, analyzing, interpreting, and communicating with data to solve real-world problems.
+        </p>
+
+        <p>
+            <em>This video explains data science in accessible terms:</em>
+            Perfect for sharing with colleagues and administrators who want to understand the fundamentals of what students will be learning.
+        </p>
+
+        <video xml:id="video-what-is-ds" youtube="X3paOmcrTjQ" />
+
+    </section>
+
+    <section xml:id="section-importance">
+        <title>The Critical Importance of Data Science Education</title>
+
+        <subsection xml:id="subsection-ai-future">
+            <title>Preparing Students for an AI-Powered Future</title>
             
             <p>
-                Data Science 4 Everyone is a groundbreaking initiative dedicated to making data science education accessible, equitable, and effective for all K-12 students. We believe that in today's data-driven world, every student deserves the opportunity to develop critical data literacy skills that will serve them throughout their lives.
+                We live in an unprecedented era where artificial intelligence and data-driven decision-making shape every aspect of our lives. Students who graduate without data literacy skills will be fundamentally unprepared for the careers, civic responsibilities, and daily decisions they'll face. Data science education provides students with the critical thinking tools necessary to:
             </p>
 
             <p>
-                <em>Watch this introduction to learn more about our mission:</em>
-                This video provides an overview of Data Science 4 Everyone's approach to making data science education accessible and engaging for all students.
+                <alert>Navigate AI Systems Thoughtfully</alert>: Understanding how AI uses data helps students become informed consumers and creators of technology rather than passive users.
             </p>
 
-            <video xml:id="video-ds4e-intro" youtube="KdXRyYOrros" />
+            <p>
+                <alert>Evaluate Information Critically</alert>: In an age of misinformation, students need skills to assess data sources, identify bias, and distinguish correlation from causation.
+            </p>
 
-        </section>
+            <p>
+                <alert>Make Evidence-Based Decisions</alert>: Whether choosing a college major, evaluating health information, or voting on policy issues, data literacy empowers better decision-making.
+            </p>
+        </subsection>
 
-        <section xml:id="section-what-is-ds">
-            <title>What Exactly is Data Science?</title>
+        <subsection xml:id="subsection-career-readiness">
+            <title>21st Century Career Readiness</title>
             
             <p>
-                Before diving into why data science education is crucial, it's important to understand what we mean by <term>data science</term>. Data science is the interdisciplinary field that uses scientific methods, algorithms, and systems to extract knowledge and insights from data. For K-12 students, this translates to developing skills in collecting, analyzing, interpreting, and communicating with data to solve real-world problems.
+                Data science skills are no longer confined to traditional STEM careers. Today's job market demands data literacy across virtually every field:
             </p>
 
             <p>
-                <em>This video explains data science in accessible terms:</em>
-                Perfect for sharing with colleagues and administrators who want to understand the fundamentals of what students will be learning.
+                <alert>Healthcare professionals</alert> analyze patient data and research trends. <alert>Business leaders</alert> use data analytics to drive strategic decisions. <alert>Social workers</alert> track program effectiveness and community needs. <alert>Artists and designers</alert> leverage data to understand audiences and trends. <alert>Educators</alert> use assessment data to improve student outcomes.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsection-civic-engagement">
+            <title>Civic Engagement and Democratic Participation</title>
+            
+            <p>
+                Data literacy is fundamental to engaged citizenship. Students equipped with data science skills can critically evaluate political claims and policy proposals, understand complex social issues through evidence-based analysis, participate meaningfully in community problem-solving, and advocate effectively for causes they care about using data-driven arguments.
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsection-enhanced-learning">
+            <title>Enhanced Learning Across All Subjects</title>
+            
+            <p>
+                Data science education doesn't replace traditional subjects—it enhances them:
             </p>
 
-            <video xml:id="video-what-is-ds" youtube="X3paOmcrTjQ" />
+            <p>
+                <alert>Mathematics</alert>: Real-world applications make abstract concepts concrete and meaningful. <alert>Science</alert>: Students learn to analyze experimental data and understand scientific processes. <alert>Social Studies</alert>: Historical and contemporary issues become more tangible through data analysis. <alert>English Language Arts</alert>: Data storytelling develops communication and persuasion skills.
+            </p>
+        </subsection>
 
-        </section>
+        <subsection xml:id="subsection-equity">
+            <title>Equity and Access</title>
+            
+            <p>
+                Perhaps most importantly, systematic data science education helps level the playing field. When data literacy becomes part of core curriculum rather than an elective for privileged students, we ensure that all young people—regardless of background—develop these essential 21st-century skills.
+            </p>
+        </subsection>
 
-        <section xml:id="section-importance">
-            <title>The Critical Importance of Data Science Education</title>
+    </section>
 
-            <subsection xml:id="subsection-ai-future">
-                <title>Preparing Students for an AI-Powered Future</title>
-                
-                <p>
-                    We live in an unprecedented era where artificial intelligence and data-driven decision-making shape every aspect of our lives. Students who graduate without data literacy skills will be fundamentally unprepared for the careers, civic responsibilities, and daily decisions they'll face. Data science education provides students with the critical thinking tools necessary to:
-                </p>
-
-                <ul>
-                    <li><em>Navigate AI Systems Thoughtfully</em>: Understanding how AI uses data helps students become informed consumers and creators of technology rather than passive users</li>
-                    <li><em>Evaluate Information Critically</em>: In an age of misinformation, students need skills to assess data sources, identify bias, and distinguish correlation from causation</li>
-                    <li><em>Make Evidence-Based Decisions</em>: Whether choosing a college major, evaluating health information, or voting on policy issues, data literacy empowers better decision-making</li>
-                </ul>
-            </subsection>
-
-            <subsection xml:id="subsection-career-readiness">
-                <title>21st Century Career Readiness</title>
-                
-                <p>
-                    Data science skills are no longer confined to traditional STEM careers. Today's job market demands data literacy across virtually every field:
-                </p>
-
-                <ul>
-                    <li><em>Healthcare professionals</em> analyze patient data and research trends</li>
-                    <li><em>Business leaders</em> use data analytics to drive strategic decisions</li>
-                    <li><em>Social workers</em> track program effectiveness and community needs</li>
-                    <li><em>Artists and designers</em> leverage data to understand audiences and trends</li>
-                    <li><em>Educators</em> use assessment data to improve student outcomes</li>
-                </ul>
-            </subsection>
-
-            <subsection xml:id="subsection-civic-engagement">
-                <title>Civic Engagement and Democratic Participation</title>
-                
-                <p>
-                    Data literacy is fundamental to engaged citizenship. Students equipped with data science skills can:
-                </p>
-
-                <ul>
-                    <li>Critically evaluate political claims and policy proposals</li>
-                    <li>Understand complex social issues through evidence-based analysis</li>
-                    <li>Participate meaningfully in community problem-solving</li>
-                    <li>Advocate effectively for causes they care about using data-driven arguments</li>
-                </ul>
-            </subsection>
-
-            <subsection xml:id="subsection-enhanced-learning">
-                <title>Enhanced Learning Across All Subjects</title>
-                
-                <p>
-                    Data science education doesn't replace traditional subjects—it enhances them:
-                </p>
-
-                <ul>
-                    <li><em>Mathematics</em>: Real-world applications make abstract concepts concrete and meaningful</li>
-                    <li><em>Science</em>: Students learn to analyze experimental data and understand scientific processes</li>
-                    <li><em>Social Studies</em>: Historical and contemporary issues become more tangible through data analysis</li>
-                    <li><em>English Language Arts</em>: Data storytelling develops communication and persuasion skills</li>
-                </ul>
-            </subsection>
-
-            <subsection xml:id="subsection-equity">
-                <title>Equity and Access</title>
-                
-                <p>
-                    Perhaps most importantly, systematic data science education helps level the playing field. When data literacy becomes part of core curriculum rather than an elective for privileged students, we ensure that all young people—regardless of background—develop these essential 21st-century skills.
-                </p>
-            </subsection>
-
-        </section>
-
-    </chapter>
+</chapter>

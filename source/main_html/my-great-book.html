@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Implementing Data Science in Your School</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.22/dist/_static/pretext/css/theme-default-modern.min.css" rel="stylesheet" type="text/css">
+<link href="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.22/dist/_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.22/dist/_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Implementing Data Science in Your School">
+<meta property="book:author" content="Hannah Kurzweil">
+<script src="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.22/dist/_static/pretext/js/lib/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.22/dist/_static/pretext/js/lib/jquery.sticky.js"></script><script src="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.22/dist/_static/pretext/js/lib/jquery.espy.min.js"></script><script src="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.22/dist/_static/pretext/js/pretext.js"></script><script src="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.22/dist/_static/pretext/js/pretext_add_on.js?x=1"></script><script src="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.22/dist/_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.8.4';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.22/dist/_static/prefix-runtime.962d00926ef9460e.bundle.js"></script><script src="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.22/dist/_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.22/dist/_static/prefix-runestone.2e7f40e86ae7d163.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.22/dist/_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.22/dist/_static/prefix-runestone.5bdeacdba067a0e3.css">
+<script src="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.22/dist/_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.22/dist/_static/pretext/js/pretext_search.js"></script><script src="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.22/dist/_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">Implementing Data Science in Your School</span> <span class="subtitle">The What, Why, and How</span></a></h1>
+<p class="byline">Hannah Kurzweil</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><span class="previous-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></span><span class="up-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></span><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="#frontmatter" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="#chapter-what-and-why" class="internal"><span class="codenumber">1</span> <span class="title">What and Why</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#section-intro-ds4e" class="internal"><span class="codenumber">1.1</span> <span class="title">Introduction to Data Science 4 Everyone</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#section-what-is-ds" class="internal"><span class="codenumber">1.2</span> <span class="title">What Exactly is Data Science?</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="#section-importance" class="internal"><span class="codenumber">1.3</span> <span class="title">The Critical Importance of Data Science Education</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#subsection-ai-future" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Preparing Students for an AI-Powered Future</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#subsection-career-readiness" class="internal"><span class="codenumber">1.3.2</span> <span class="title">21st Century Career Readiness</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#subsection-civic-engagement" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Civic Engagement and Democratic Participation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#subsection-enhanced-learning" class="internal"><span class="codenumber">1.3.4</span> <span class="title">Enhanced Learning Across All Subjects</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#subsection-equity" class="internal"><span class="codenumber">1.3.5</span> <span class="title">Equity and Access</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="#chapter-implementation" class="internal"><span class="codenumber">2</span> <span class="title">Flexible Approaches to Data Science Implementation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="#section-full-course" class="internal"><span class="codenumber">2.1</span> <span class="title">Full Course Implementations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#subsection-bootstrap" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Bootstrap</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#subsection-coursekata" class="internal"><span class="codenumber">2.1.2</span> <span class="title">CourseKata</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#subsection-ids" class="internal"><span class="codenumber">2.1.3</span> <span class="title">Introduction to Data Science (IDS)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#subsection-youcubed" class="internal"><span class="codenumber">2.1.4</span> <span class="title">Youcubed</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="#section-modular" class="internal"><span class="codenumber">2.2</span> <span class="title">Modular and Supplemental Approaches</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#subsection-skew" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Skew The Script</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#subsection-tuva" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Tuva</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#subsection-dataspire" class="internal"><span class="codenumber">2.2.3</span> <span class="title">DataSpire</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="#section-platforms" class="internal"><span class="codenumber">2.3</span> <span class="title">Platform and Tool-Based Solutions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#subsection-dataclassroom" class="internal"><span class="codenumber">2.3.1</span> <span class="title">DataClassroom</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#subsection-quanthub" class="internal"><span class="codenumber">2.3.2</span> <span class="title">QuantHub</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="#section-state-specific" class="internal"><span class="codenumber">2.4</span> <span class="title">State-Specific Solutions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#subsection-codeva" class="internal"><span class="codenumber">2.4.1</span> <span class="title">CodeVA (Virginia)</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="#section-pd-focused" class="internal"><span class="codenumber">2.5</span> <span class="title">Professional Development Focused</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#subsection-instep" class="internal"><span class="codenumber">2.5.1</span> <span class="title">InSTEP</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="#section-higher-ed" class="internal"><span class="codenumber">2.6</span> <span class="title">Higher Education and Community College</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#subsection-data8" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Data 8 (UC Berkeley)</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="#chapter-learning-progressions" class="internal"><span class="codenumber">3</span> <span class="title">Data Science Learning Progressions: A Framework for Success</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#section-framework-overview" class="internal"><span class="codenumber">3.1</span> <span class="title">Framework Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#section-strand-a" class="internal"><span class="codenumber">3.2</span> <span class="title">Strand A: Data Dispositions and Responsibility</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#section-strand-b" class="internal"><span class="codenumber">3.3</span> <span class="title">Strand B: Creation and Curation</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#section-strand-c" class="internal"><span class="codenumber">3.4</span> <span class="title">Strand C: Analysis and Modeling Techniques</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#section-strand-d" class="internal"><span class="codenumber">3.5</span> <span class="title">Strand D: Interpreting Problems and Results</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#section-strand-e" class="internal"><span class="codenumber">3.6</span> <span class="title">Strand E: Visualization and Communication</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#section-integration" class="internal"><span class="codenumber">3.7</span> <span class="title">How the Strands Work Together</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#section-implementation-flexibility" class="internal"><span class="codenumber">3.8</span> <span class="title">Implementation Flexibility</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="#backmatter" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="book" id="my-great-book"><section class="frontmatter" id="frontmatter"><h2 class="heading">
+<span class="title">Implementing Data Science in Your School</span><span class="subtitle">The What, Why, and How</span>
+</h2>
+<div class="author">
+<div class="author-name">Hannah Kurzweil</div>
+<div class="author-info">Data Science 4 Everyone<br>Getting Data Science in Your School!</div>
+</div>
+<div class="date">July 8, 2025</div>
+<section class="colophon" id="front-colophon"><h3 class="heading hide-type">
+<span class="type">Colophon</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Colophon</span>
+</h3>
+<div class="credit">
+<b class="title">Website</b> <a class="external" href="https://pretextbook.org" target="_blank">My Website</a><details class="ptx-footnote" aria-live="polite" id="frontmatter-1-3-2"><summary class="ptx-footnote__number" title="Footnote 0.0.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="frontmatter-1-3-2"><code class="code-inline tex2jax_ignore">pretextbook.org</code></div></details>
+</div>
+<div class="para copyright">©2020–2024 You</div>
+<div class="para license">This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <a class="external" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CreativeCommons.org</a><details class="ptx-footnote" aria-live="polite" id="frontmatter-1-4-3-2"><summary class="ptx-footnote__number" title="Footnote 0.0.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="frontmatter-1-4-3-2"><code class="code-inline tex2jax_ignore">creativecommons.org/licenses/by-sa/4.0</code></div></details>
+</div>
+<div class="autopermalink" data-description="Colophon"><a href="#front-colophon" title="Copy heading and permalink for Colophon" aria-label="Copy heading and permalink for Colophon">🔗</a></div></section><div class="autopermalink" data-description="Front Matter"><a href="#frontmatter" title="Copy heading and permalink for Front Matter" aria-label="Copy heading and permalink for Front Matter">🔗</a></div></section><section class="chapter" id="chapter-what-and-why"><h2 class="heading">
+<span class="type">Chapter</span><span class="space"> </span><span class="codenumber">1</span><span class="space"> </span><span class="title">What and Why</span>
+</h2>
+<section class="section" id="section-intro-ds4e"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.1</span><span class="space"> </span><span class="title">Introduction to Data Science 4 Everyone</span>
+</h3>
+<div class="para" id="section-intro-ds4e-2">Data Science 4 Everyone is a groundbreaking initiative dedicated to making data science education accessible, equitable, and effective for all K-12 students. We believe that in today’s data-driven world, every student deserves the opportunity to develop critical data literacy skills that will serve them throughout their lives.<div class="autopermalink" data-description="Paragraph"><a href="#section-intro-ds4e-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-intro-ds4e-3">
+<em class="emphasis">Watch this introduction to learn more about our mission:</em> This video provides an overview of Data Science 4 Everyone’s approach to making data science education accessible and engaging for all students.<div class="autopermalink" data-description="Paragraph"><a href="#section-intro-ds4e-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/KdXRyYOrros?&amp;modestbranding=1&amp;rel=0" id="video-ds4e-intro"></iframe></div>
+<div class="autopermalink" data-description="Section 1.1: Introduction to Data Science 4 Everyone"><a href="#section-intro-ds4e" title="Copy heading and permalink for Section 1.1: Introduction to Data Science 4 Everyone" aria-label="Copy heading and permalink for Section 1.1: Introduction to Data Science 4 Everyone">🔗</a></div></section><section class="section" id="section-what-is-ds"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.2</span><span class="space"> </span><span class="title">What Exactly is Data Science?</span>
+</h3>
+<div class="para" id="section-what-is-ds-2">Before diving into why data science education is crucial, it’s important to understand what we mean by <dfn class="terminology">data science</dfn>. Data science is the interdisciplinary field that uses scientific methods, algorithms, and systems to extract knowledge and insights from data. For K-12 students, this translates to developing skills in collecting, analyzing, interpreting, and communicating with data to solve real-world problems.<div class="autopermalink" data-description="Paragraph"><a href="#section-what-is-ds-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-what-is-ds-3">
+<em class="emphasis">This video explains data science in accessible terms:</em> Perfect for sharing with colleagues and administrators who want to understand the fundamentals of what students will be learning.<div class="autopermalink" data-description="Paragraph"><a href="#section-what-is-ds-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/X3paOmcrTjQ?&amp;modestbranding=1&amp;rel=0" id="video-what-is-ds"></iframe></div>
+<div class="autopermalink" data-description="Section 1.2: What Exactly is Data Science?"><a href="#section-what-is-ds" title="Copy heading and permalink for Section 1.2: What Exactly is Data Science?" aria-label="Copy heading and permalink for Section 1.2: What Exactly is Data Science?">🔗</a></div></section><section class="section" id="section-importance"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.3</span><span class="space"> </span><span class="title">The Critical Importance of Data Science Education</span>
+</h3>
+<section class="subsection" id="subsection-ai-future"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.3.1</span><span class="space"> </span><span class="title">Preparing Students for an AI-Powered Future</span>
+</h4>
+<div class="para" id="subsection-ai-future-2">We live in an unprecedented era where artificial intelligence and data-driven decision-making shape every aspect of our lives. Students who graduate without data literacy skills will be fundamentally unprepared for the careers, civic responsibilities, and daily decisions they’ll face. Data science education provides students with the critical thinking tools necessary to:<div class="autopermalink" data-description="Paragraph"><a href="#subsection-ai-future-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-ai-future-3">
+<em class="alert">Navigate AI Systems Thoughtfully</em>: Understanding how AI uses data helps students become informed consumers and creators of technology rather than passive users.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-ai-future-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-ai-future-4">
+<em class="alert">Evaluate Information Critically</em>: In an age of misinformation, students need skills to assess data sources, identify bias, and distinguish correlation from causation.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-ai-future-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-ai-future-5">
+<em class="alert">Make Evidence-Based Decisions</em>: Whether choosing a college major, evaluating health information, or voting on policy issues, data literacy empowers better decision-making.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-ai-future-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 1.3.1: Preparing Students for an AI-Powered Future"><a href="#subsection-ai-future" title="Copy heading and permalink for Subsection 1.3.1: Preparing Students for an AI-Powered Future" aria-label="Copy heading and permalink for Subsection 1.3.1: Preparing Students for an AI-Powered Future">🔗</a></div></section><section class="subsection" id="subsection-career-readiness"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.3.2</span><span class="space"> </span><span class="title">21st Century Career Readiness</span>
+</h4>
+<div class="para" id="subsection-career-readiness-2">Data science skills are no longer confined to traditional STEM careers. Today’s job market demands data literacy across virtually every field:<div class="autopermalink" data-description="Paragraph"><a href="#subsection-career-readiness-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-career-readiness-3">
+<em class="alert">Healthcare professionals</em> analyze patient data and research trends. <em class="alert">Business leaders</em> use data analytics to drive strategic decisions. <em class="alert">Social workers</em> track program effectiveness and community needs. <em class="alert">Artists and designers</em> leverage data to understand audiences and trends. <em class="alert">Educators</em> use assessment data to improve student outcomes.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-career-readiness-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 1.3.2: 21st Century Career Readiness"><a href="#subsection-career-readiness" title="Copy heading and permalink for Subsection 1.3.2: 21st Century Career Readiness" aria-label="Copy heading and permalink for Subsection 1.3.2: 21st Century Career Readiness">🔗</a></div></section><section class="subsection" id="subsection-civic-engagement"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.3.3</span><span class="space"> </span><span class="title">Civic Engagement and Democratic Participation</span>
+</h4>
+<div class="para" id="subsection-civic-engagement-2">Data literacy is fundamental to engaged citizenship. Students equipped with data science skills can critically evaluate political claims and policy proposals, understand complex social issues through evidence-based analysis, participate meaningfully in community problem-solving, and advocate effectively for causes they care about using data-driven arguments.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-civic-engagement-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 1.3.3: Civic Engagement and Democratic Participation"><a href="#subsection-civic-engagement" title="Copy heading and permalink for Subsection 1.3.3: Civic Engagement and Democratic Participation" aria-label="Copy heading and permalink for Subsection 1.3.3: Civic Engagement and Democratic Participation">🔗</a></div></section><section class="subsection" id="subsection-enhanced-learning"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.3.4</span><span class="space"> </span><span class="title">Enhanced Learning Across All Subjects</span>
+</h4>
+<div class="para" id="subsection-enhanced-learning-2">Data science education doesn’t replace traditional subjects—it enhances them:<div class="autopermalink" data-description="Paragraph"><a href="#subsection-enhanced-learning-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-enhanced-learning-3">
+<em class="alert">Mathematics</em>: Real-world applications make abstract concepts concrete and meaningful. <em class="alert">Science</em>: Students learn to analyze experimental data and understand scientific processes. <em class="alert">Social Studies</em>: Historical and contemporary issues become more tangible through data analysis. <em class="alert">English Language Arts</em>: Data storytelling develops communication and persuasion skills.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-enhanced-learning-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 1.3.4: Enhanced Learning Across All Subjects"><a href="#subsection-enhanced-learning" title="Copy heading and permalink for Subsection 1.3.4: Enhanced Learning Across All Subjects" aria-label="Copy heading and permalink for Subsection 1.3.4: Enhanced Learning Across All Subjects">🔗</a></div></section><section class="subsection" id="subsection-equity"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.3.5</span><span class="space"> </span><span class="title">Equity and Access</span>
+</h4>
+<div class="para" id="subsection-equity-2">Perhaps most importantly, systematic data science education helps level the playing field. When data literacy becomes part of core curriculum rather than an elective for privileged students, we ensure that all young people—regardless of background—develop these essential 21st-century skills.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-equity-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 1.3.5: Equity and Access"><a href="#subsection-equity" title="Copy heading and permalink for Subsection 1.3.5: Equity and Access" aria-label="Copy heading and permalink for Subsection 1.3.5: Equity and Access">🔗</a></div></section><div class="autopermalink" data-description="Section 1.3: The Critical Importance of Data Science Education"><a href="#section-importance" title="Copy heading and permalink for Section 1.3: The Critical Importance of Data Science Education" aria-label="Copy heading and permalink for Section 1.3: The Critical Importance of Data Science Education">🔗</a></div></section><div class="autopermalink" data-description="Chapter 1: What and Why"><a href="#chapter-what-and-why" title="Copy heading and permalink for Chapter 1: What and Why" aria-label="Copy heading and permalink for Chapter 1: What and Why">🔗</a></div></section><section class="chapter" id="chapter-implementation"><h2 class="heading">
+<span class="type">Chapter</span><span class="space"> </span><span class="codenumber">2</span><span class="space"> </span><span class="title">Flexible Approaches to Data Science Implementation</span>
+</h2>
+<section class="introduction" id="chapter-implementation-2"><div class="para" id="chapter-implementation-2-1">One of the greatest strengths of data science education is its flexibility. Schools can implement data science learning in ways that fit their unique contexts, resources, and goals. Below are proven approaches with specific curriculum partners to support each pathway.<div class="autopermalink" data-description="Paragraph"><a href="#chapter-implementation-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="section" id="section-full-course"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.1</span><span class="space"> </span><span class="title">Full Course Implementations</span>
+</h3>
+<section class="introduction" id="section-full-course-2"><div class="para" id="section-full-course-2-1">For schools ready to offer dedicated data science courses, these comprehensive curricula provide everything needed for semester or year-long programs:<div class="autopermalink" data-description="Paragraph"><a href="#section-full-course-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsection" id="subsection-bootstrap"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.1.1</span><span class="space"> </span><span class="title">Bootstrap</span>
+</h4>
+<div class="para" id="subsection-bootstrap-2">
+<em class="alert">Cost</em>: Free curriculum and software; Professional Development $1800 per teacher<div class="autopermalink" data-description="Paragraph"><a href="#subsection-bootstrap-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-bootstrap-3">
+<em class="alert">Grades</em>: 5-12<div class="autopermalink" data-description="Paragraph"><a href="#subsection-bootstrap-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-bootstrap-4">
+<em class="alert">Approach</em>: Research-based, integrated Computer Science and Data Science modules<div class="autopermalink" data-description="Paragraph"><a href="#subsection-bootstrap-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-bootstrap-5">
+<em class="alert">Technology</em>: Pyret (Python-like language designed for education)<div class="autopermalink" data-description="Paragraph"><a href="#subsection-bootstrap-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-bootstrap-6">
+<em class="alert">Special Features</em>: Can be implemented as standalone course OR integrated into existing Math, Science, History, or CS classes<div class="autopermalink" data-description="Paragraph"><a href="#subsection-bootstrap-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-bootstrap-7">
+<em class="alert">Support</em>: Comprehensive materials including lesson plans, slides, workbooks, answer keys, and datasets<div class="autopermalink" data-description="Paragraph"><a href="#subsection-bootstrap-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 2.1.1: Bootstrap"><a href="#subsection-bootstrap" title="Copy heading and permalink for Subsection 2.1.1: Bootstrap" aria-label="Copy heading and permalink for Subsection 2.1.1: Bootstrap">🔗</a></div></section><section class="subsection" id="subsection-coursekata"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.1.2</span><span class="space"> </span><span class="title">CourseKata</span>
+</h4>
+<div class="para" id="subsection-coursekata-2">
+<em class="alert">Cost</em>: FREE first-year fellowship (includes curriculum, tech, and PD); $24/student subsequent years<div class="autopermalink" data-description="Paragraph"><a href="#subsection-coursekata-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-coursekata-3">
+<em class="alert">Grades</em>: 9-12 (High school and college)<div class="autopermalink" data-description="Paragraph"><a href="#subsection-coursekata-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-coursekata-4">
+<em class="alert">Courses</em>: Statistics, Data Science, Algebra with Data<div class="autopermalink" data-description="Paragraph"><a href="#subsection-coursekata-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-coursekata-5">
+<em class="alert">Technology</em>: R programming with cloud-based Jupyter Notebooks<div class="autopermalink" data-description="Paragraph"><a href="#subsection-coursekata-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-coursekata-6">
+<em class="alert">Special Features</em>: Interactive online textbook with real-time progress tracking and LMS integration<div class="autopermalink" data-description="Paragraph"><a href="#subsection-coursekata-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 2.1.2: CourseKata"><a href="#subsection-coursekata" title="Copy heading and permalink for Subsection 2.1.2: CourseKata" aria-label="Copy heading and permalink for Subsection 2.1.2: CourseKata">🔗</a></div></section><section class="subsection" id="subsection-ids"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.1.3</span><span class="space"> </span><span class="title">Introduction to Data Science (IDS)</span>
+</h4>
+<div class="para" id="subsection-ids-2">
+<em class="alert">Cost</em>: Free curriculum; fee-based professional development; technology costs per teacher/student<div class="autopermalink" data-description="Paragraph"><a href="#subsection-ids-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-ids-3">
+<em class="alert">Grades</em>: 10-12<div class="autopermalink" data-description="Paragraph"><a href="#subsection-ids-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-ids-4">
+<em class="alert">Approach</em>: Full-year, student-centered, highly interactive course aligned with ASA statistics guidelines<div class="autopermalink" data-description="Paragraph"><a href="#subsection-ids-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-ids-5">
+<em class="alert">Technology</em>: R programming with AWS Cloud and RStudio<div class="autopermalink" data-description="Paragraph"><a href="#subsection-ids-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-ids-6">
+<em class="alert">Support</em>: Extensive PD (9 days first year, 4 days second year) plus ongoing ticketing system<div class="autopermalink" data-description="Paragraph"><a href="#subsection-ids-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 2.1.3: Introduction to Data Science (IDS)"><a href="#subsection-ids" title="Copy heading and permalink for Subsection 2.1.3: Introduction to Data Science (IDS)" aria-label="Copy heading and permalink for Subsection 2.1.3: Introduction to Data Science (IDS)">🔗</a></div></section><section class="subsection" id="subsection-youcubed"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.1.4</span><span class="space"> </span><span class="title">Youcubed</span>
+</h4>
+<div class="para" id="subsection-youcubed-2">
+<em class="alert">Cost</em>: Free curriculum and technology; fee-based professional development for high school course<div class="autopermalink" data-description="Paragraph"><a href="#subsection-youcubed-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-youcubed-3">
+<em class="alert">Grades</em>: K-12 (with dedicated high school course option)<div class="autopermalink" data-description="Paragraph"><a href="#subsection-youcubed-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-youcubed-4">
+<em class="alert">Approach</em>: Project-based learning with both full course and individual lesson options<div class="autopermalink" data-description="Paragraph"><a href="#subsection-youcubed-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-youcubed-5">
+<em class="alert">Technology</em>: CODAP, Google Sheets, Google Data Commons, Google Colab, EduBlocks, Tableau Cloud<div class="autopermalink" data-description="Paragraph"><a href="#subsection-youcubed-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 2.1.4: Youcubed"><a href="#subsection-youcubed" title="Copy heading and permalink for Subsection 2.1.4: Youcubed" aria-label="Copy heading and permalink for Subsection 2.1.4: Youcubed">🔗</a></div></section><div class="autopermalink" data-description="Section 2.1: Full Course Implementations"><a href="#section-full-course" title="Copy heading and permalink for Section 2.1: Full Course Implementations" aria-label="Copy heading and permalink for Section 2.1: Full Course Implementations">🔗</a></div></section><section class="section" id="section-modular"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.2</span><span class="space"> </span><span class="title">Modular and Supplemental Approaches</span>
+</h3>
+<section class="introduction" id="section-modular-2"><div class="para" id="section-modular-2-1">Perfect for schools wanting to integrate data science into existing courses without major restructuring:<div class="autopermalink" data-description="Paragraph"><a href="#section-modular-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsection" id="subsection-skew"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2.1</span><span class="space"> </span><span class="title">Skew The Script</span>
+</h4>
+<div class="para" id="subsection-skew-2">
+<em class="alert">Cost</em>: All curriculum free; low-cost summer professional development<div class="autopermalink" data-description="Paragraph"><a href="#subsection-skew-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-skew-3">
+<em class="alert">Grades</em>: 8-12<div class="autopermalink" data-description="Paragraph"><a href="#subsection-skew-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-skew-4">
+<em class="alert">Courses</em>: AP Statistics, Algebra I, Algebra II<div class="autopermalink" data-description="Paragraph"><a href="#subsection-skew-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-skew-5">
+<em class="alert">Technology</em>: Desmos and graphing calculators (tools teachers already use)<div class="autopermalink" data-description="Paragraph"><a href="#subsection-skew-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-skew-6">
+<em class="alert">Special Features</em>: Lessons ready to use immediately without new technology or training<div class="autopermalink" data-description="Paragraph"><a href="#subsection-skew-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 2.2.1: Skew The Script"><a href="#subsection-skew" title="Copy heading and permalink for Subsection 2.2.1: Skew The Script" aria-label="Copy heading and permalink for Subsection 2.2.1: Skew The Script">🔗</a></div></section><section class="subsection" id="subsection-tuva"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2.2</span><span class="space"> </span><span class="title">Tuva</span>
+</h4>
+<div class="para" id="subsection-tuva-2">
+<em class="alert">Cost</em>: Free and paid versions available<div class="autopermalink" data-description="Paragraph"><a href="#subsection-tuva-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-tuva-3">
+<em class="alert">Grades</em>: 2-12<div class="autopermalink" data-description="Paragraph"><a href="#subsection-tuva-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-tuva-4">
+<em class="alert">Approach</em>: Supplements core Science, Math, or Social Studies curriculum with real-world datasets and visualization tools<div class="autopermalink" data-description="Paragraph"><a href="#subsection-tuva-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-tuva-5">
+<em class="alert">Technology</em>: Web application with extensive LMS integrations<div class="autopermalink" data-description="Paragraph"><a href="#subsection-tuva-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-tuva-6">
+<em class="alert">Special Features</em>: Three programs (Tuva Jr. for grades 2-5, Tuva for 6-12, Tuva 3D Science Assessments)<div class="autopermalink" data-description="Paragraph"><a href="#subsection-tuva-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 2.2.2: Tuva"><a href="#subsection-tuva" title="Copy heading and permalink for Subsection 2.2.2: Tuva" aria-label="Copy heading and permalink for Subsection 2.2.2: Tuva">🔗</a></div></section><section class="subsection" id="subsection-dataspire"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2.3</span><span class="space"> </span><span class="title">DataSpire</span>
+</h4>
+<div class="para" id="subsection-dataspire-2">
+<em class="alert">Cost</em>: Free strategies via website/YouTube; $5-20 for digital resources; $25-80 for asynchronous PL<div class="autopermalink" data-description="Paragraph"><a href="#subsection-dataspire-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-dataspire-3">
+<em class="alert">Grades</em>: K-12 + Pre-service<div class="autopermalink" data-description="Paragraph"><a href="#subsection-dataspire-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-dataspire-4">
+<em class="alert">Approach</em>: Classroom-ready strategies to integrate data literacy into existing curriculum<div class="autopermalink" data-description="Paragraph"><a href="#subsection-dataspire-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-dataspire-5">
+<em class="alert">Technology</em>: Platform agnostic—works with whatever teachers already have<div class="autopermalink" data-description="Paragraph"><a href="#subsection-dataspire-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-dataspire-6">
+<em class="alert">Special Features</em>: Coordinated professional learning across subject areas and grade bands<div class="autopermalink" data-description="Paragraph"><a href="#subsection-dataspire-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 2.2.3: DataSpire"><a href="#subsection-dataspire" title="Copy heading and permalink for Subsection 2.2.3: DataSpire" aria-label="Copy heading and permalink for Subsection 2.2.3: DataSpire">🔗</a></div></section><div class="autopermalink" data-description="Section 2.2: Modular and Supplemental Approaches"><a href="#section-modular" title="Copy heading and permalink for Section 2.2: Modular and Supplemental Approaches" aria-label="Copy heading and permalink for Section 2.2: Modular and Supplemental Approaches">🔗</a></div></section><section class="section" id="section-platforms"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.3</span><span class="space"> </span><span class="title">Platform and Tool-Based Solutions</span>
+</h3>
+<section class="introduction" id="section-platforms-2"><div class="para" id="section-platforms-2-1">For schools seeking comprehensive digital platforms that support data science learning:<div class="autopermalink" data-description="Paragraph"><a href="#section-platforms-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsection" id="subsection-dataclassroom"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.3.1</span><span class="space"> </span><span class="title">DataClassroom</span>
+</h4>
+<div class="para" id="subsection-dataclassroom-2">
+<em class="alert">Cost</em>: Free and paid access options; licenses at district, school, or teacher level<div class="autopermalink" data-description="Paragraph"><a href="#subsection-dataclassroom-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-dataclassroom-3">
+<em class="alert">Grades</em>: 6-12<div class="autopermalink" data-description="Paragraph"><a href="#subsection-dataclassroom-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-dataclassroom-4">
+<em class="alert">Subjects</em>: Math, Science, Social Studies<div class="autopermalink" data-description="Paragraph"><a href="#subsection-dataclassroom-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-dataclassroom-5">
+<em class="alert">Technology</em>: Web application with major LMS integrations (Google, Clever, Canvas, Schoology, Classlink)<div class="autopermalink" data-description="Paragraph"><a href="#subsection-dataclassroom-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-dataclassroom-6">
+<em class="alert">Special Features</em>: Currently used in 41 states; meets all federal digital security and privacy laws<div class="autopermalink" data-description="Paragraph"><a href="#subsection-dataclassroom-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 2.3.1: DataClassroom"><a href="#subsection-dataclassroom" title="Copy heading and permalink for Subsection 2.3.1: DataClassroom" aria-label="Copy heading and permalink for Subsection 2.3.1: DataClassroom">🔗</a></div></section><section class="subsection" id="subsection-quanthub"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.3.2</span><span class="space"> </span><span class="title">QuantHub</span>
+</h4>
+<div class="para" id="subsection-quanthub-2">
+<em class="alert">Cost</em>: Per-seat pricing with scale discounts; full instructor support included<div class="autopermalink" data-description="Paragraph"><a href="#subsection-quanthub-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-quanthub-3">
+<em class="alert">Grades</em>: Maps to most state data science standards<div class="autopermalink" data-description="Paragraph"><a href="#subsection-quanthub-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-quanthub-4">
+<em class="alert">Courses</em>: Applied Data Analytics, AI and Machine Learning, Python and SQL, Power BI/Excel, Cybersecurity, Statistics<div class="autopermalink" data-description="Paragraph"><a href="#subsection-quanthub-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-quanthub-5">
+<em class="alert">Technology</em>: Adaptive, AI-driven platform with real-time assessment tools<div class="autopermalink" data-description="Paragraph"><a href="#subsection-quanthub-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-quanthub-6">
+<em class="alert">Special Features</em>: In-platform simulations using real-world data; integrates with Google Classroom, PowerSchool, Schoology<div class="autopermalink" data-description="Paragraph"><a href="#subsection-quanthub-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 2.3.2: QuantHub"><a href="#subsection-quanthub" title="Copy heading and permalink for Subsection 2.3.2: QuantHub" aria-label="Copy heading and permalink for Subsection 2.3.2: QuantHub">🔗</a></div></section><div class="autopermalink" data-description="Section 2.3: Platform and Tool-Based Solutions"><a href="#section-platforms" title="Copy heading and permalink for Section 2.3: Platform and Tool-Based Solutions" aria-label="Copy heading and permalink for Section 2.3: Platform and Tool-Based Solutions">🔗</a></div></section><section class="section" id="section-state-specific"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.4</span><span class="space"> </span><span class="title">State-Specific Solutions</span>
+</h3>
+<section class="subsection" id="subsection-codeva"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.4.1</span><span class="space"> </span><span class="title">CodeVA (Virginia)</span>
+</h4>
+<div class="para" id="subsection-codeva-2">
+<em class="alert">Cost</em>: Completely free including professional development for Virginia educators<div class="autopermalink" data-description="Paragraph"><a href="#subsection-codeva-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-codeva-3">
+<em class="alert">Grades</em>: High school Data Science course alignment<div class="autopermalink" data-description="Paragraph"><a href="#subsection-codeva-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-codeva-4">
+<em class="alert">Approach</em>: Three course sequences through project-based learning<div class="autopermalink" data-description="Paragraph"><a href="#subsection-codeva-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-codeva-5">
+<em class="alert">Technology</em>: “Unplugged” activities, CODAP, and Python<div class="autopermalink" data-description="Paragraph"><a href="#subsection-codeva-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-codeva-6">
+<em class="alert">Special Features</em>: Developed with Virginia Department of Education support and aligned to Virginia’s Data Science standards<div class="autopermalink" data-description="Paragraph"><a href="#subsection-codeva-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 2.4.1: CodeVA (Virginia)"><a href="#subsection-codeva" title="Copy heading and permalink for Subsection 2.4.1: CodeVA (Virginia)" aria-label="Copy heading and permalink for Subsection 2.4.1: CodeVA (Virginia)">🔗</a></div></section><div class="autopermalink" data-description="Section 2.4: State-Specific Solutions"><a href="#section-state-specific" title="Copy heading and permalink for Section 2.4: State-Specific Solutions" aria-label="Copy heading and permalink for Section 2.4: State-Specific Solutions">🔗</a></div></section><section class="section" id="section-pd-focused"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.5</span><span class="space"> </span><span class="title">Professional Development Focused</span>
+</h3>
+<section class="subsection" id="subsection-instep"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.5.1</span><span class="space"> </span><span class="title">InSTEP</span>
+</h4>
+<div class="para" id="subsection-instep-2">
+<em class="alert">Cost</em>: Completely FREE<div class="autopermalink" data-description="Paragraph"><a href="#subsection-instep-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-instep-3">
+<em class="alert">Grades</em>: 6-12<div class="autopermalink" data-description="Paragraph"><a href="#subsection-instep-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-instep-4">
+<em class="alert">Approach</em>: Personalized professional learning for teachers and instructional coaches<div class="autopermalink" data-description="Paragraph"><a href="#subsection-instep-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-instep-5">
+<em class="alert">Technology</em>: Focus on CODAP with occasional use of iNZight Lite and spreadsheets<div class="autopermalink" data-description="Paragraph"><a href="#subsection-instep-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-instep-6">
+<em class="alert">Special Features</em>: Customized recommendations and choice of learning modules; multiple modalities (online, face-to-face, hybrid)<div class="autopermalink" data-description="Paragraph"><a href="#subsection-instep-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 2.5.1: InSTEP"><a href="#subsection-instep" title="Copy heading and permalink for Subsection 2.5.1: InSTEP" aria-label="Copy heading and permalink for Subsection 2.5.1: InSTEP">🔗</a></div></section><div class="autopermalink" data-description="Section 2.5: Professional Development Focused"><a href="#section-pd-focused" title="Copy heading and permalink for Section 2.5: Professional Development Focused" aria-label="Copy heading and permalink for Section 2.5: Professional Development Focused">🔗</a></div></section><section class="section" id="section-higher-ed"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.6</span><span class="space"> </span><span class="title">Higher Education and Community College</span>
+</h3>
+<section class="subsection" id="subsection-data8"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.6.1</span><span class="space"> </span><span class="title">Data 8 (UC Berkeley)</span>
+</h4>
+<div class="para" id="subsection-data8-2">
+<em class="alert">Cost</em>: Free online textbook and summer workshop; districts pay for infrastructure<div class="autopermalink" data-description="Paragraph"><a href="#subsection-data8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-data8-3">
+<em class="alert">Level</em>: College/Community College + some high school<div class="autopermalink" data-description="Paragraph"><a href="#subsection-data8-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-data8-4">
+<em class="alert">Approach</em>: Combines statistics and computer science principles<div class="autopermalink" data-description="Paragraph"><a href="#subsection-data8-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-data8-5">
+<em class="alert">Technology</em>: Python with JupyterHub infrastructure required<div class="autopermalink" data-description="Paragraph"><a href="#subsection-data8-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-data8-6">
+<em class="alert">Special Features</em>: Very technical implementation; modules can be integrated into other courses<div class="autopermalink" data-description="Paragraph"><a href="#subsection-data8-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 2.6.1: Data 8 (UC Berkeley)"><a href="#subsection-data8" title="Copy heading and permalink for Subsection 2.6.1: Data 8 (UC Berkeley)" aria-label="Copy heading and permalink for Subsection 2.6.1: Data 8 (UC Berkeley)">🔗</a></div></section><div class="autopermalink" data-description="Section 2.6: Higher Education and Community College"><a href="#section-higher-ed" title="Copy heading and permalink for Section 2.6: Higher Education and Community College" aria-label="Copy heading and permalink for Section 2.6: Higher Education and Community College">🔗</a></div></section><div class="autopermalink" data-description="Chapter 2: Flexible Approaches to Data Science Implementation"><a href="#chapter-implementation" title="Copy heading and permalink for Chapter 2: Flexible Approaches to Data Science Implementation" aria-label="Copy heading and permalink for Chapter 2: Flexible Approaches to Data Science Implementation">🔗</a></div></section><section class="chapter" id="chapter-learning-progressions"><h2 class="heading">
+<span class="type">Chapter</span><span class="space"> </span><span class="codenumber">3</span><span class="space"> </span><span class="title">Data Science Learning Progressions: A Framework for Success</span>
+</h2>
+<section class="introduction" id="chapter-learning-progressions-2"><div class="para" id="chapter-learning-progressions-2-1">The Data Science Learning Progressions provide a comprehensive framework for what students should know and be able to do at each grade level. Rather than a rigid sequence, these progressions offer flexibility while ensuring students develop essential skills systematically from kindergarten through 12th grade.<div class="autopermalink" data-description="Paragraph"><a href="#chapter-learning-progressions-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="section" id="section-framework-overview"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">3.1</span><span class="space"> </span><span class="title">Framework Overview</span>
+</h3>
+<div class="para" id="section-framework-overview-2">The learning progressions are organized into five interconnected strands that work together to develop complete data science literacy:<div class="autopermalink" data-description="Paragraph"><a href="#section-framework-overview-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-framework-overview-3">
+<em class="alert">Strand A: Data Dispositions and Responsibility</em> | <em class="alert">Strand B: Creation and Curation</em> | <em class="alert">Strand C: Analysis and Modeling Techniques</em> | <em class="alert">Strand D: Interpreting Problems and Results</em> | <em class="alert">Strand E: Visualization and Communication</em><div class="autopermalink" data-description="Paragraph"><a href="#section-framework-overview-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-framework-overview-4">Each strand progresses from foundational concepts in early elementary through advanced applications in high school, with opportunities for acceleration and depth based on student readiness and interest.<div class="autopermalink" data-description="Paragraph"><a href="#section-framework-overview-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section 3.1: Framework Overview"><a href="#section-framework-overview" title="Copy heading and permalink for Section 3.1: Framework Overview" aria-label="Copy heading and permalink for Section 3.1: Framework Overview">🔗</a></div></section><section class="section" id="section-strand-a"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">3.2</span><span class="space"> </span><span class="title">Strand A: Data Dispositions and Responsibility</span>
+</h3>
+<div class="para" id="section-strand-a-2">This foundational strand focuses on understanding what data is and developing responsible approaches to working with it. Students learn that data takes many forms, comes from human decisions, and carries both opportunities and responsibilities.<div class="autopermalink" data-description="Paragraph"><a href="#section-strand-a-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-strand-a-3">
+<em class="alert">Key Components:</em><div class="autopermalink" data-description="Paragraph"><a href="#section-strand-a-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-strand-a-4">
+<em class="alert">Nature of Data</em>: Understanding data types, sources, variability, and the role of AI<div class="autopermalink" data-description="Paragraph"><a href="#section-strand-a-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-strand-a-5">
+<em class="alert">Data Ethics and Responsibilities</em>: Recognizing bias, considering privacy, and understanding the power of data<div class="autopermalink" data-description="Paragraph"><a href="#section-strand-a-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-strand-a-6">
+<em class="alert">Investigative Dispositions</em>: Developing curiosity, iteration skills, and agency in data work<div class="autopermalink" data-description="Paragraph"><a href="#section-strand-a-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-strand-a-7">From recognizing that “data can answer questions” in kindergarten to “evaluating AI model bias” in high school, this strand ensures students become thoughtful, ethical data citizens.<div class="autopermalink" data-description="Paragraph"><a href="#section-strand-a-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section 3.2: Strand A: Data Dispositions and Responsibility"><a href="#section-strand-a" title="Copy heading and permalink for Section 3.2: Strand A: Data Dispositions and Responsibility" aria-label="Copy heading and permalink for Section 3.2: Strand A: Data Dispositions and Responsibility">🔗</a></div></section><section class="section" id="section-strand-b"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">3.3</span><span class="space"> </span><span class="title">Strand B: Creation and Curation</span>
+</h3>
+<div class="para" id="section-strand-b-2">This strand develops skills in collecting, organizing, and preparing data for analysis. Students learn that real-world data is often messy and requires careful curation to be useful.<div class="autopermalink" data-description="Paragraph"><a href="#section-strand-b-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-strand-b-3">
+<em class="alert">Key Components:</em><div class="autopermalink" data-description="Paragraph"><a href="#section-strand-b-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-strand-b-4">
+<em class="alert">Organization and Processing</em>: Cleaning data, creating structures, and transforming information<div class="autopermalink" data-description="Paragraph"><a href="#section-strand-b-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-strand-b-5">
+<em class="alert">Designing for Data Collection</em>: Planning investigations and choosing appropriate methods<div class="autopermalink" data-description="Paragraph"><a href="#section-strand-b-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-strand-b-6">
+<em class="alert">Measurement and Datafication</em>: Creating and evaluating data collection processes<div class="autopermalink" data-description="Paragraph"><a href="#section-strand-b-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-strand-b-7">
+<em class="alert">Complexity of Data</em>: Working with increasingly sophisticated datasets<div class="autopermalink" data-description="Paragraph"><a href="#section-strand-b-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-strand-b-8">Students progress from simple data collection activities to designing complex research studies and managing large, multi-variable datasets.<div class="autopermalink" data-description="Paragraph"><a href="#section-strand-b-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section 3.3: Strand B: Creation and Curation"><a href="#section-strand-b" title="Copy heading and permalink for Section 3.3: Strand B: Creation and Curation" aria-label="Copy heading and permalink for Section 3.3: Strand B: Creation and Curation">🔗</a></div></section><section class="section" id="section-strand-c"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">3.4</span><span class="space"> </span><span class="title">Strand C: Analysis and Modeling Techniques</span>
+</h3>
+<div class="para" id="section-strand-c-2">This strand develops technical skills for summarizing, analyzing, and modeling data. Students learn to identify patterns, understand relationships, and use appropriate tools for different types of analysis.<div class="autopermalink" data-description="Paragraph"><a href="#section-strand-c-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-strand-c-3">
+<em class="alert">Key Components:</em><div class="autopermalink" data-description="Paragraph"><a href="#section-strand-c-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-strand-c-4">
+<em class="alert">Summarizing Data</em>: Measures of center, spread, shape, and frequency<div class="autopermalink" data-description="Paragraph"><a href="#section-strand-c-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-strand-c-5">
+<em class="alert">Identifying Patterns and Relationships</em>: Comparing variables, understanding distributions, analyzing non-traditional data<div class="autopermalink" data-description="Paragraph"><a href="#section-strand-c-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-strand-c-6">
+<em class="alert">Variability in Data</em>: Describing, comparing, and understanding sources of variability<div class="autopermalink" data-description="Paragraph"><a href="#section-strand-c-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-strand-c-7">
+<em class="alert">Digital Tools of Data Analysis</em>: Selecting and using appropriate technology ethically<div class="autopermalink" data-description="Paragraph"><a href="#section-strand-c-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-strand-c-8">
+<em class="alert">Models of Data</em>: Understanding and creating models to represent and predict<div class="autopermalink" data-description="Paragraph"><a href="#section-strand-c-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-strand-c-9">From sorting objects by characteristics to building machine learning models, students develop sophisticated analytical capabilities.<div class="autopermalink" data-description="Paragraph"><a href="#section-strand-c-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section 3.4: Strand C: Analysis and Modeling Techniques"><a href="#section-strand-c" title="Copy heading and permalink for Section 3.4: Strand C: Analysis and Modeling Techniques" aria-label="Copy heading and permalink for Section 3.4: Strand C: Analysis and Modeling Techniques">🔗</a></div></section><section class="section" id="section-strand-d"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">3.5</span><span class="space"> </span><span class="title">Strand D: Interpreting Problems and Results</span>
+</h3>
+<div class="para" id="section-strand-d-2">This strand focuses on making sense of data analysis results and connecting them to real-world contexts. Students learn to justify claims, consider limitations, and understand when and how results can be generalized.<div class="autopermalink" data-description="Paragraph"><a href="#section-strand-d-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-strand-d-3">
+<em class="alert">Key Components:</em><div class="autopermalink" data-description="Paragraph"><a href="#section-strand-d-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-strand-d-4">
+<em class="alert">Making and Justifying Claims</em>: Using probabilistic language, understanding significance, distinguishing correlation from causation<div class="autopermalink" data-description="Paragraph"><a href="#section-strand-d-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-strand-d-5">
+<em class="alert">Problem Identification and Question Formation</em>: Creating testable questions and acknowledging limitations<div class="autopermalink" data-description="Paragraph"><a href="#section-strand-d-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-strand-d-6">
+<em class="alert">Generalization</em>: Understanding when and how results apply beyond the original context<div class="autopermalink" data-description="Paragraph"><a href="#section-strand-d-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-strand-d-7">Students develop critical thinking skills essential for navigating our data-rich world, from simple pattern recognition to sophisticated statistical reasoning.<div class="autopermalink" data-description="Paragraph"><a href="#section-strand-d-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section 3.5: Strand D: Interpreting Problems and Results"><a href="#section-strand-d" title="Copy heading and permalink for Section 3.5: Strand D: Interpreting Problems and Results" aria-label="Copy heading and permalink for Section 3.5: Strand D: Interpreting Problems and Results">🔗</a></div></section><section class="section" id="section-strand-e"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">3.6</span><span class="space"> </span><span class="title">Strand E: Visualization and Communication</span>
+</h3>
+<div class="para" id="section-strand-e-2">This strand develops skills in creating and interpreting visual representations of data and communicating findings effectively to different audiences.<div class="autopermalink" data-description="Paragraph"><a href="#section-strand-e-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-strand-e-3">
+<em class="alert">Key Components:</em><div class="autopermalink" data-description="Paragraph"><a href="#section-strand-e-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-strand-e-4">
+<em class="alert">Representations and Dynamic Visualizations</em>: Creating clear, purpose-driven visualizations and developing graphical literacy<div class="autopermalink" data-description="Paragraph"><a href="#section-strand-e-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-strand-e-5">
+<em class="alert">Data Storytelling</em>: Connecting narratives with data and adapting communication for different audiences<div class="autopermalink" data-description="Paragraph"><a href="#section-strand-e-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-strand-e-6">
+<em class="alert">Acting on Data to Benefit Society</em>: Using data for advocacy, civic engagement, and positive change<div class="autopermalink" data-description="Paragraph"><a href="#section-strand-e-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-strand-e-7">From simple picture graphs to complex interactive dashboards, students learn to communicate data insights that drive understanding and action.<div class="autopermalink" data-description="Paragraph"><a href="#section-strand-e-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section 3.6: Strand E: Visualization and Communication"><a href="#section-strand-e" title="Copy heading and permalink for Section 3.6: Strand E: Visualization and Communication" aria-label="Copy heading and permalink for Section 3.6: Strand E: Visualization and Communication">🔗</a></div></section><section class="section" id="section-integration"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">3.7</span><span class="space"> </span><span class="title">How the Strands Work Together</span>
+</h3>
+<div class="para" id="section-integration-2">The power of this framework lies in how the strands integrate and reinforce each other. A typical data science investigation might involve:<div class="autopermalink" data-description="Paragraph"><a href="#section-integration-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-integration-3">
+<em class="alert">Step 1 - Strand A</em>: Considering ethical implications and developing investigative questions<div class="autopermalink" data-description="Paragraph"><a href="#section-integration-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-integration-4">
+<em class="alert">Step 2 - Strand B</em>: Collecting and preparing appropriate data<div class="autopermalink" data-description="Paragraph"><a href="#section-integration-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-integration-5">
+<em class="alert">Step 3 - Strand C</em>: Analyzing data using appropriate tools and techniques<div class="autopermalink" data-description="Paragraph"><a href="#section-integration-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-integration-6">
+<em class="alert">Step 4 - Strand D</em>: Interpreting results and considering their validity and limitations<div class="autopermalink" data-description="Paragraph"><a href="#section-integration-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-integration-7">
+<em class="alert">Step 5 - Strand E</em>: Communicating findings effectively to drive action<div class="autopermalink" data-description="Paragraph"><a href="#section-integration-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-integration-8">This integrated approach ensures students don’t just learn isolated skills, but develop the complete toolkit needed for ethical, effective data science practice.<div class="autopermalink" data-description="Paragraph"><a href="#section-integration-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section 3.7: How the Strands Work Together"><a href="#section-integration" title="Copy heading and permalink for Section 3.7: How the Strands Work Together" aria-label="Copy heading and permalink for Section 3.7: How the Strands Work Together">🔗</a></div></section><section class="section" id="section-implementation-flexibility"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">3.8</span><span class="space"> </span><span class="title">Implementation Flexibility</span>
+</h3>
+<div class="para" id="section-implementation-flexibility-2">The learning progressions are designed to support multiple implementation approaches:<div class="autopermalink" data-description="Paragraph"><a href="#section-implementation-flexibility-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-implementation-flexibility-3">
+<em class="alert">Dedicated Courses</em>: Full data science courses can systematically address all strands. <em class="alert">Integrated Modules</em>: Individual strands or concepts can enhance existing subject areas. <em class="alert">Cross-Curricular Projects</em>: Real-world investigations can naturally incorporate multiple strands. <em class="alert">Differentiated Instruction</em>: Students can work at appropriate levels within each strand.<div class="autopermalink" data-description="Paragraph"><a href="#section-implementation-flexibility-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-implementation-flexibility-4">This flexibility ensures that every school can find an approach that fits their context while still providing students with essential data science skills.<div class="autopermalink" data-description="Paragraph"><a href="#section-implementation-flexibility-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section 3.8: Implementation Flexibility"><a href="#section-implementation-flexibility" title="Copy heading and permalink for Section 3.8: Implementation Flexibility" aria-label="Copy heading and permalink for Section 3.8: Implementation Flexibility">🔗</a></div></section><div class="autopermalink" data-description="Chapter 3: Data Science Learning Progressions: A Framework for Success"><a href="#chapter-learning-progressions" title="Copy heading and permalink for Chapter 3: Data Science Learning Progressions: A Framework for Success" aria-label="Copy heading and permalink for Chapter 3: Data Science Learning Progressions: A Framework for Success">🔗</a></div></section><section class="backmatter" id="backmatter"><section class="colophon" id="backmatter-2"><h3 class="heading hide-type">
+<span class="type">Colophon</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Colophon</span>
+</h3>
+<div class="para" id="backmatter-2-1">This book was authored in PreTeXt.<div class="autopermalink" data-description="Paragraph"><a href="#backmatter-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Colophon"><a href="#backmatter-2" title="Copy heading and permalink for Colophon" aria-label="Copy heading and permalink for Colophon">🔗</a></div></section><div class="autopermalink" data-description="Back Matter: Backmatter"><a href="#backmatter" title="Copy heading and permalink for Back Matter: Backmatter" aria-label="Copy heading and permalink for Back Matter: Backmatter">🔗</a></div></section><div class="autopermalink" data-description="Book: Implementing Data Science in Your School"><a href="#my-great-book" title="Copy heading and permalink for Book: Implementing Data Science in Your School" aria-label="Copy heading and permalink for Book: Implementing Data Science in Your School">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<span class="previous-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></span><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+<script>var ptx_lunr_search_style = "textbook";
+var ptx_lunr_docs = [
+{
+  "id": "my-great-book",
+  "level": "1",
+  "url": "#my-great-book",
+  "type": "Book",
+  "number": "",
+  "title": "Implementing Data Science in Your School",
+  "body": " Implementing Data Science in Your School  The What, Why, and How     Hannah Kurzweil Data Science 4 Everyone Getting Data Science in Your School!      My Website   copyright            What and Why   Introduction to Data Science 4 Everyone  Data Science 4 Everyone is a groundbreaking initiative dedicated to making data science education accessible, equitable, and effective for all K-12 students. We believe that in today's data-driven world, every student deserves the opportunity to develop critical data literacy skills that will serve them throughout their lives.   Watch this introduction to learn more about our mission: This video provides an overview of Data Science 4 Everyone's approach to making data science education accessible and engaging for all students.     What Exactly is Data Science?  Before diving into why data science education is crucial, it's important to understand what we mean by data science . Data science is the interdisciplinary field that uses scientific methods, algorithms, and systems to extract knowledge and insights from data. For K-12 students, this translates to developing skills in collecting, analyzing, interpreting, and communicating with data to solve real-world problems.   This video explains data science in accessible terms: Perfect for sharing with colleagues and administrators who want to understand the fundamentals of what students will be learning.     The Critical Importance of Data Science Education   Preparing Students for an AI-Powered Future  We live in an unprecedented era where artificial intelligence and data-driven decision-making shape every aspect of our lives. Students who graduate without data literacy skills will be fundamentally unprepared for the careers, civic responsibilities, and daily decisions they'll face. Data science education provides students with the critical thinking tools necessary to:   Navigate AI Systems Thoughtfully : Understanding how AI uses data helps students become informed consumers and creators of technology rather than passive users.   Evaluate Information Critically : In an age of misinformation, students need skills to assess data sources, identify bias, and distinguish correlation from causation.   Make Evidence-Based Decisions : Whether choosing a college major, evaluating health information, or voting on policy issues, data literacy empowers better decision-making.    21st Century Career Readiness  Data science skills are no longer confined to traditional STEM careers. Today's job market demands data literacy across virtually every field:   Healthcare professionals analyze patient data and research trends. Business leaders use data analytics to drive strategic decisions. Social workers track program effectiveness and community needs. Artists and designers leverage data to understand audiences and trends. Educators use assessment data to improve student outcomes.    Civic Engagement and Democratic Participation  Data literacy is fundamental to engaged citizenship. Students equipped with data science skills can critically evaluate political claims and policy proposals, understand complex social issues through evidence-based analysis, participate meaningfully in community problem-solving, and advocate effectively for causes they care about using data-driven arguments.    Enhanced Learning Across All Subjects  Data science education doesn't replace traditional subjects—it enhances them:   Mathematics : Real-world applications make abstract concepts concrete and meaningful. Science : Students learn to analyze experimental data and understand scientific processes. Social Studies : Historical and contemporary issues become more tangible through data analysis. English Language Arts : Data storytelling develops communication and persuasion skills.    Equity and Access  Perhaps most importantly, systematic data science education helps level the playing field. When data literacy becomes part of core curriculum rather than an elective for privileged students, we ensure that all young people—regardless of background—develop these essential 21st-century skills.      Flexible Approaches to Data Science Implementation   One of the greatest strengths of data science education is its flexibility. Schools can implement data science learning in ways that fit their unique contexts, resources, and goals. Below are proven approaches with specific curriculum partners to support each pathway.    Full Course Implementations   For schools ready to offer dedicated data science courses, these comprehensive curricula provide everything needed for semester or year-long programs:    Bootstrap   Cost : Free curriculum and software; Professional Development $1800 per teacher   Grades : 5-12   Approach : Research-based, integrated Computer Science and Data Science modules   Technology : Pyret (Python-like language designed for education)   Special Features : Can be implemented as standalone course OR integrated into existing Math, Science, History, or CS classes   Support : Comprehensive materials including lesson plans, slides, workbooks, answer keys, and datasets    CourseKata   Cost : FREE first-year fellowship (includes curriculum, tech, and PD); $24\/student subsequent years   Grades : 9-12 (High school and college)   Courses : Statistics, Data Science, Algebra with Data   Technology : R programming with cloud-based Jupyter Notebooks   Special Features : Interactive online textbook with real-time progress tracking and LMS integration    Introduction to Data Science (IDS)   Cost : Free curriculum; fee-based professional development; technology costs per teacher\/student   Grades : 10-12   Approach : Full-year, student-centered, highly interactive course aligned with ASA statistics guidelines   Technology : R programming with AWS Cloud and RStudio   Support : Extensive PD (9 days first year, 4 days second year) plus ongoing ticketing system    Youcubed   Cost : Free curriculum and technology; fee-based professional development for high school course   Grades : K-12 (with dedicated high school course option)   Approach : Project-based learning with both full course and individual lesson options   Technology : CODAP, Google Sheets, Google Data Commons, Google Colab, EduBlocks, Tableau Cloud     Modular and Supplemental Approaches   Perfect for schools wanting to integrate data science into existing courses without major restructuring:    Skew The Script   Cost : All curriculum free; low-cost summer professional development   Grades : 8-12   Courses : AP Statistics, Algebra I, Algebra II   Technology : Desmos and graphing calculators (tools teachers already use)   Special Features : Lessons ready to use immediately without new technology or training    Tuva   Cost : Free and paid versions available   Grades : 2-12   Approach : Supplements core Science, Math, or Social Studies curriculum with real-world datasets and visualization tools   Technology : Web application with extensive LMS integrations   Special Features : Three programs (Tuva Jr. for grades 2-5, Tuva for 6-12, Tuva 3D Science Assessments)    DataSpire   Cost : Free strategies via website\/YouTube; $5-20 for digital resources; $25-80 for asynchronous PL   Grades : K-12 + Pre-service   Approach : Classroom-ready strategies to integrate data literacy into existing curriculum   Technology : Platform agnostic—works with whatever teachers already have   Special Features : Coordinated professional learning across subject areas and grade bands     Platform and Tool-Based Solutions   For schools seeking comprehensive digital platforms that support data science learning:    DataClassroom   Cost : Free and paid access options; licenses at district, school, or teacher level   Grades : 6-12   Subjects : Math, Science, Social Studies   Technology : Web application with major LMS integrations (Google, Clever, Canvas, Schoology, Classlink)   Special Features : Currently used in 41 states; meets all federal digital security and privacy laws    QuantHub   Cost : Per-seat pricing with scale discounts; full instructor support included   Grades : Maps to most state data science standards   Courses : Applied Data Analytics, AI and Machine Learning, Python and SQL, Power BI\/Excel, Cybersecurity, Statistics   Technology : Adaptive, AI-driven platform with real-time assessment tools   Special Features : In-platform simulations using real-world data; integrates with Google Classroom, PowerSchool, Schoology     State-Specific Solutions   CodeVA (Virginia)   Cost : Completely free including professional development for Virginia educators   Grades : High school Data Science course alignment   Approach : Three course sequences through project-based learning   Technology : Unplugged activities, CODAP, and Python   Special Features : Developed with Virginia Department of Education support and aligned to Virginia's Data Science standards     Professional Development Focused   InSTEP   Cost : Completely FREE   Grades : 6-12   Approach : Personalized professional learning for teachers and instructional coaches   Technology : Focus on CODAP with occasional use of iNZight Lite and spreadsheets   Special Features : Customized recommendations and choice of learning modules; multiple modalities (online, face-to-face, hybrid)     Higher Education and Community College   Data 8 (UC Berkeley)   Cost : Free online textbook and summer workshop; districts pay for infrastructure   Level : College\/Community College + some high school   Approach : Combines statistics and computer science principles   Technology : Python with JupyterHub infrastructure required   Special Features : Very technical implementation; modules can be integrated into other courses      Data Science Learning Progressions: A Framework for Success   The Data Science Learning Progressions provide a comprehensive framework for what students should know and be able to do at each grade level. Rather than a rigid sequence, these progressions offer flexibility while ensuring students develop essential skills systematically from kindergarten through 12th grade.    Framework Overview  The learning progressions are organized into five interconnected strands that work together to develop complete data science literacy:   Strand A: Data Dispositions and Responsibility | Strand B: Creation and Curation | Strand C: Analysis and Modeling Techniques | Strand D: Interpreting Problems and Results | Strand E: Visualization and Communication   Each strand progresses from foundational concepts in early elementary through advanced applications in high school, with opportunities for acceleration and depth based on student readiness and interest.    Strand A: Data Dispositions and Responsibility  This foundational strand focuses on understanding what data is and developing responsible approaches to working with it. Students learn that data takes many forms, comes from human decisions, and carries both opportunities and responsibilities.  Key Components:   Nature of Data : Understanding data types, sources, variability, and the role of AI   Data Ethics and Responsibilities : Recognizing bias, considering privacy, and understanding the power of data   Investigative Dispositions : Developing curiosity, iteration skills, and agency in data work  From recognizing that data can answer questions in kindergarten to evaluating AI model bias in high school, this strand ensures students become thoughtful, ethical data citizens.    Strand B: Creation and Curation  This strand develops skills in collecting, organizing, and preparing data for analysis. Students learn that real-world data is often messy and requires careful curation to be useful.  Key Components:   Organization and Processing : Cleaning data, creating structures, and transforming information   Designing for Data Collection : Planning investigations and choosing appropriate methods   Measurement and Datafication : Creating and evaluating data collection processes   Complexity of Data : Working with increasingly sophisticated datasets  Students progress from simple data collection activities to designing complex research studies and managing large, multi-variable datasets.    Strand C: Analysis and Modeling Techniques  This strand develops technical skills for summarizing, analyzing, and modeling data. Students learn to identify patterns, understand relationships, and use appropriate tools for different types of analysis.  Key Components:   Summarizing Data : Measures of center, spread, shape, and frequency   Identifying Patterns and Relationships : Comparing variables, understanding distributions, analyzing non-traditional data   Variability in Data : Describing, comparing, and understanding sources of variability   Digital Tools of Data Analysis : Selecting and using appropriate technology ethically   Models of Data : Understanding and creating models to represent and predict  From sorting objects by characteristics to building machine learning models, students develop sophisticated analytical capabilities.    Strand D: Interpreting Problems and Results  This strand focuses on making sense of data analysis results and connecting them to real-world contexts. Students learn to justify claims, consider limitations, and understand when and how results can be generalized.  Key Components:   Making and Justifying Claims : Using probabilistic language, understanding significance, distinguishing correlation from causation   Problem Identification and Question Formation : Creating testable questions and acknowledging limitations   Generalization : Understanding when and how results apply beyond the original context  Students develop critical thinking skills essential for navigating our data-rich world, from simple pattern recognition to sophisticated statistical reasoning.    Strand E: Visualization and Communication  This strand develops skills in creating and interpreting visual representations of data and communicating findings effectively to different audiences.  Key Components:   Representations and Dynamic Visualizations : Creating clear, purpose-driven visualizations and developing graphical literacy   Data Storytelling : Connecting narratives with data and adapting communication for different audiences   Acting on Data to Benefit Society : Using data for advocacy, civic engagement, and positive change  From simple picture graphs to complex interactive dashboards, students learn to communicate data insights that drive understanding and action.    How the Strands Work Together  The power of this framework lies in how the strands integrate and reinforce each other. A typical data science investigation might involve:   Step 1 - Strand A : Considering ethical implications and developing investigative questions   Step 2 - Strand B : Collecting and preparing appropriate data   Step 3 - Strand C : Analyzing data using appropriate tools and techniques   Step 4 - Strand D : Interpreting results and considering their validity and limitations   Step 5 - Strand E : Communicating findings effectively to drive action  This integrated approach ensures students don't just learn isolated skills, but develop the complete toolkit needed for ethical, effective data science practice.    Implementation Flexibility  The learning progressions are designed to support multiple implementation approaches:   Dedicated Courses : Full data science courses can systematically address all strands. Integrated Modules : Individual strands or concepts can enhance existing subject areas. Cross-Curricular Projects : Real-world investigations can naturally incorporate multiple strands. Differentiated Instruction : Students can work at appropriate levels within each strand.  This flexibility ensures that every school can find an approach that fits their context while still providing students with essential data science skills.      Backmatter       This book was authored in PreTeXt .    "
+},
+{
+  "id": "section-what-is-ds-2",
+  "level": "2",
+  "url": "#section-what-is-ds-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "data science "
+}
+]
+
+var ptx_lunr_idx = lunr(function () {
+  this.ref('id')
+  this.field('title')
+  this.field('body')
+  this.metadataWhitelist = ['position']
+
+  ptx_lunr_docs.forEach(function (doc) {
+    this.add(doc)
+  }, this)
+})
+</script>
+</body>
+</html>

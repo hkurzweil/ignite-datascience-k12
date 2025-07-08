@@ -1,196 +1,298 @@
 <chapter xml:id="chapter-implementation">
-        <title>Flexible Approaches to Data Science Implementation</title>
+    <title>Flexible Approaches to Data Science Implementation</title>
 
+    <introduction>
+        <p>
+            One of the greatest strengths of data science education is its flexibility. Schools can implement data science learning in ways that fit their unique contexts, resources, and goals. Below are proven approaches with specific curriculum partners to support each pathway.
+        </p>
+    </introduction>
+
+    <section xml:id="section-full-course">
+        <title>Full Course Implementations</title>
+        
         <introduction>
-            <p>
-                One of the greatest strengths of data science education is its flexibility. Schools can implement data science learning in ways that fit their unique contexts, resources, and goals. Below are proven approaches with specific curriculum partners to support each pathway.
-            </p>
-        </introduction>
-
-        <section xml:id="section-full-course">
-            <title>Full Course Implementations</title>
-            
             <p>
                 For schools ready to offer dedicated data science courses, these comprehensive curricula provide everything needed for semester or year-long programs:
             </p>
+        </introduction>
 
-            <subsection xml:id="subsection-bootstrap">
-                <title>Bootstrap</title>
-                
-                <ul>
-                    <li><em>Cost</em>: Free curriculum and software; Professional Development $1800 per teacher</li>
-                    <li><em>Grades</em>: 5-12</li>
-                    <li><em>Approach</em>: Research-based, integrated Computer Science and Data Science modules</li>
-                    <li><em>Technology</em>: Pyret (Python-like language designed for education)</li>
-                    <li><em>Special Features</em>: Can be implemented as standalone course OR integrated into existing Math, Science, History, or CS classes</li>
-                    <li><em>Support</em>: Comprehensive materials including lesson plans, slides, workbooks, answer keys, and datasets</li>
-                </ul>
-            </subsection>
-
-            <subsection xml:id="subsection-coursekata">
-                <title>CourseKata</title>
-                
-                <ul>
-                    <li><em>Cost</em>: FREE first-year fellowship (includes curriculum, tech, and PD); $24/student subsequent years</li>
-                    <li><em>Grades</em>: 9-12 (High school and college)</li>
-                    <li><em>Courses</em>: Statistics, Data Science, Algebra with Data</li>
-                    <li><em>Technology</em>: R programming with cloud-based Jupyter Notebooks</li>
-                    <li><em>Special Features</em>: Interactive online textbook with real-time progress tracking and LMS integration</li>
-                </ul>
-            </subsection>
-
-            <subsection xml:id="subsection-ids">
-                <title>Introduction to Data Science (IDS)</title>
-                
-                <ul>
-                    <li><em>Cost</em>: Free curriculum; fee-based professional development; technology costs per teacher/student</li>
-                    <li><em>Grades</em>: 10-12</li>
-                    <li><em>Approach</em>: Full-year, student-centered, highly interactive course aligned with ASA statistics guidelines</li>
-                    <li><em>Technology</em>: R programming with AWS Cloud and RStudio</li>
-                    <li><em>Support</em>: Extensive PD (9 days first year, 4 days second year) plus ongoing ticketing system</li>
-                </ul>
-            </subsection>
-
-            <subsection xml:id="subsection-youcubed">
-                <title>Youcubed</title>
-                
-                <ul>
-                    <li><em>Cost</em>: Free curriculum and technology; fee-based professional development for high school course</li>
-                    <li><em>Grades</em>: K-12 (with dedicated high school course option)</li>
-                    <li><em>Approach</em>: Project-based learning with both full course and individual lesson options</li>
-                    <li><em>Technology</em>: CODAP, Google Sheets, Google Data Commons, Google Colab, EduBlocks, Tableau Cloud</li>
-                </ul>
-            </subsection>
-
-        </section>
-
-        <section xml:id="section-modular">
-            <title>Modular and Supplemental Approaches</title>
+        <subsection xml:id="subsection-bootstrap">
+            <title>Bootstrap</title>
             
+            <p>
+                <alert>Cost</alert>: Free curriculum and software; Professional Development $1800 per teacher
+            </p>
+            <p>
+                <alert>Grades</alert>: 5-12
+            </p>
+            <p>
+                <alert>Approach</alert>: Research-based, integrated Computer Science and Data Science modules
+            </p>
+            <p>
+                <alert>Technology</alert>: Pyret (Python-like language designed for education)
+            </p>
+            <p>
+                <alert>Special Features</alert>: Can be implemented as standalone course OR integrated into existing Math, Science, History, or CS classes
+            </p>
+            <p>
+                <alert>Support</alert>: Comprehensive materials including lesson plans, slides, workbooks, answer keys, and datasets
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsection-coursekata">
+            <title>CourseKata</title>
+            
+            <p>
+                <alert>Cost</alert>: FREE first-year fellowship (includes curriculum, tech, and PD); $24/student subsequent years
+            </p>
+            <p>
+                <alert>Grades</alert>: 9-12 (High school and college)
+            </p>
+            <p>
+                <alert>Courses</alert>: Statistics, Data Science, Algebra with Data
+            </p>
+            <p>
+                <alert>Technology</alert>: R programming with cloud-based Jupyter Notebooks
+            </p>
+            <p>
+                <alert>Special Features</alert>: Interactive online textbook with real-time progress tracking and LMS integration
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsection-ids">
+            <title>Introduction to Data Science (IDS)</title>
+            
+            <p>
+                <alert>Cost</alert>: Free curriculum; fee-based professional development; technology costs per teacher/student
+            </p>
+            <p>
+                <alert>Grades</alert>: 10-12
+            </p>
+            <p>
+                <alert>Approach</alert>: Full-year, student-centered, highly interactive course aligned with ASA statistics guidelines
+            </p>
+            <p>
+                <alert>Technology</alert>: R programming with AWS Cloud and RStudio
+            </p>
+            <p>
+                <alert>Support</alert>: Extensive PD (9 days first year, 4 days second year) plus ongoing ticketing system
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsection-youcubed">
+            <title>Youcubed</title>
+            
+            <p>
+                <alert>Cost</alert>: Free curriculum and technology; fee-based professional development for high school course
+            </p>
+            <p>
+                <alert>Grades</alert>: K-12 (with dedicated high school course option)
+            </p>
+            <p>
+                <alert>Approach</alert>: Project-based learning with both full course and individual lesson options
+            </p>
+            <p>
+                <alert>Technology</alert>: CODAP, Google Sheets, Google Data Commons, Google Colab, EduBlocks, Tableau Cloud
+            </p>
+        </subsection>
+
+    </section>
+
+    <section xml:id="section-modular">
+        <title>Modular and Supplemental Approaches</title>
+        
+        <introduction>
             <p>
                 Perfect for schools wanting to integrate data science into existing courses without major restructuring:
             </p>
+        </introduction>
 
-            <subsection xml:id="subsection-skew">
-                <title>Skew The Script</title>
-                
-                <ul>
-                    <li><em>Cost</em>: All curriculum free; low-cost summer professional development</li>
-                    <li><em>Grades</em>: 8-12</li>
-                    <li><em>Courses</em>: AP Statistics, Algebra I, Algebra II</li>
-                    <li><em>Technology</em>: Desmos and graphing calculators (tools teachers already use)</li>
-                    <li><em>Special Features</em>: Lessons ready to use immediately without new technology or training</li>
-                </ul>
-            </subsection>
-
-            <subsection xml:id="subsection-tuva">
-                <title>Tuva</title>
-                
-                <ul>
-                    <li><em>Cost</em>: Free and paid versions available</li>
-                    <li><em>Grades</em>: 2-12</li>
-                    <li><em>Approach</em>: Supplements core Science, Math, or Social Studies curriculum with real-world datasets and visualization tools</li>
-                    <li><em>Technology</em>: Web application with extensive LMS integrations</li>
-                    <li><em>Special Features</em>: Three programs (Tuva Jr. for grades 2-5, Tuva for 6-12, Tuva 3D Science Assessments)</li>
-                </ul>
-            </subsection>
-
-            <subsection xml:id="subsection-dataspire">
-                <title>DataSpire</title>
-                
-                <ul>
-                    <li><em>Cost</em>: Free strategies via website/YouTube; $5-20 for digital resources; $25-80 for asynchronous PL</li>
-                    <li><em>Grades</em>: K-12 + Pre-service</li>
-                    <li><em>Approach</em>: Classroom-ready strategies to integrate data literacy into existing curriculum</li>
-                    <li><em>Technology</em>: Platform agnostic—works with whatever teachers already have</li>
-                    <li><em>Special Features</em>: Coordinated professional learning across subject areas and grade bands</li>
-                </ul>
-            </subsection>
-
-        </section>
-
-        <section xml:id="section-platforms">
-            <title>Platform and Tool-Based Solutions</title>
+        <subsection xml:id="subsection-skew">
+            <title>Skew The Script</title>
             
+            <p>
+                <alert>Cost</alert>: All curriculum free; low-cost summer professional development
+            </p>
+            <p>
+                <alert>Grades</alert>: 8-12
+            </p>
+            <p>
+                <alert>Courses</alert>: AP Statistics, Algebra I, Algebra II
+            </p>
+            <p>
+                <alert>Technology</alert>: Desmos and graphing calculators (tools teachers already use)
+            </p>
+            <p>
+                <alert>Special Features</alert>: Lessons ready to use immediately without new technology or training
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsection-tuva">
+            <title>Tuva</title>
+            
+            <p>
+                <alert>Cost</alert>: Free and paid versions available
+            </p>
+            <p>
+                <alert>Grades</alert>: 2-12
+            </p>
+            <p>
+                <alert>Approach</alert>: Supplements core Science, Math, or Social Studies curriculum with real-world datasets and visualization tools
+            </p>
+            <p>
+                <alert>Technology</alert>: Web application with extensive LMS integrations
+            </p>
+            <p>
+                <alert>Special Features</alert>: Three programs (Tuva Jr. for grades 2-5, Tuva for 6-12, Tuva 3D Science Assessments)
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsection-dataspire">
+            <title>DataSpire</title>
+            
+            <p>
+                <alert>Cost</alert>: Free strategies via website/YouTube; $5-20 for digital resources; $25-80 for asynchronous PL
+            </p>
+            <p>
+                <alert>Grades</alert>: K-12 + Pre-service
+            </p>
+            <p>
+                <alert>Approach</alert>: Classroom-ready strategies to integrate data literacy into existing curriculum
+            </p>
+            <p>
+                <alert>Technology</alert>: Platform agnostic—works with whatever teachers already have
+            </p>
+            <p>
+                <alert>Special Features</alert>: Coordinated professional learning across subject areas and grade bands
+            </p>
+        </subsection>
+
+    </section>
+
+    <section xml:id="section-platforms">
+        <title>Platform and Tool-Based Solutions</title>
+        
+        <introduction>
             <p>
                 For schools seeking comprehensive digital platforms that support data science learning:
             </p>
+        </introduction>
 
-            <subsection xml:id="subsection-dataclassroom">
-                <title>DataClassroom</title>
-                
-                <ul>
-                    <li><em>Cost</em>: Free and paid access options; licenses at district, school, or teacher level</li>
-                    <li><em>Grades</em>: 6-12</li>
-                    <li><em>Subjects</em>: Math, Science, Social Studies</li>
-                    <li><em>Technology</em>: Web application with major LMS integrations (Google, Clever, Canvas, Schoology, Classlink)</li>
-                    <li><em>Special Features</em>: Currently used in 41 states; meets all federal digital security and privacy laws</li>
-                </ul>
-            </subsection>
+        <subsection xml:id="subsection-dataclassroom">
+            <title>DataClassroom</title>
+            
+            <p>
+                <alert>Cost</alert>: Free and paid access options; licenses at district, school, or teacher level
+            </p>
+            <p>
+                <alert>Grades</alert>: 6-12
+            </p>
+            <p>
+                <alert>Subjects</alert>: Math, Science, Social Studies
+            </p>
+            <p>
+                <alert>Technology</alert>: Web application with major LMS integrations (Google, Clever, Canvas, Schoology, Classlink)
+            </p>
+            <p>
+                <alert>Special Features</alert>: Currently used in 41 states; meets all federal digital security and privacy laws
+            </p>
+        </subsection>
 
-            <subsection xml:id="subsection-quanthub">
-                <title>QuantHub</title>
-                
-                <ul>
-                    <li><em>Cost</em>: Per-seat pricing with scale discounts; full instructor support included</li>
-                    <li><em>Grades</em>: Maps to most state data science standards</li>
-                    <li><em>Courses</em>: Applied Data Analytics, AI <ampersand /> Machine Learning, Python <ampersand /> SQL, Power BI/Excel, Cybersecurity, Statistics</li>
-                    <li><em>Technology</em>: Adaptive, AI-driven platform with real-time assessment tools</li>
-                    <li><em>Special Features</em>: In-platform simulations using real-world data; integrates with Google Classroom, PowerSchool, Schoology</li>
-                </ul>
-            </subsection>
+        <subsection xml:id="subsection-quanthub">
+            <title>QuantHub</title>
+            
+            <p>
+                <alert>Cost</alert>: Per-seat pricing with scale discounts; full instructor support included
+            </p>
+            <p>
+                <alert>Grades</alert>: Maps to most state data science standards
+            </p>
+            <p>
+                <alert>Courses</alert>: Applied Data Analytics, AI and Machine Learning, Python and SQL, Power BI/Excel, Cybersecurity, Statistics
+            </p>
+            <p>
+                <alert>Technology</alert>: Adaptive, AI-driven platform with real-time assessment tools
+            </p>
+            <p>
+                <alert>Special Features</alert>: In-platform simulations using real-world data; integrates with Google Classroom, PowerSchool, Schoology
+            </p>
+        </subsection>
 
-        </section>
+    </section>
 
-        <section xml:id="section-state-specific">
-            <title>State-Specific Solutions</title>
+    <section xml:id="section-state-specific">
+        <title>State-Specific Solutions</title>
 
-            <subsection xml:id="subsection-codeva">
-                <title>CodeVA (Virginia)</title>
-                
-                <ul>
-                    <li><em>Cost</em>: Completely free including professional development for Virginia educators</li>
-                    <li><em>Grades</em>: High school Data Science course alignment</li>
-                    <li><em>Approach</em>: Three course sequences through project-based learning</li>
-                    <li><em>Technology</em>: <q>Unplugged</q> activities, CODAP, and Python</li>
-                    <li><em>Special Features</em>: Developed with Virginia Department of Education support and aligned to Virginia's Data Science standards</li>
-                </ul>
-            </subsection>
+        <subsection xml:id="subsection-codeva">
+            <title>CodeVA (Virginia)</title>
+            
+            <p>
+                <alert>Cost</alert>: Completely free including professional development for Virginia educators
+            </p>
+            <p>
+                <alert>Grades</alert>: High school Data Science course alignment
+            </p>
+            <p>
+                <alert>Approach</alert>: Three course sequences through project-based learning
+            </p>
+            <p>
+                <alert>Technology</alert>: <q>Unplugged</q> activities, CODAP, and Python
+            </p>
+            <p>
+                <alert>Special Features</alert>: Developed with Virginia Department of Education support and aligned to Virginia's Data Science standards
+            </p>
+        </subsection>
 
-        </section>
+    </section>
 
-        <section xml:id="section-pd-focused">
-            <title>Professional Development Focused</title>
+    <section xml:id="section-pd-focused">
+        <title>Professional Development Focused</title>
 
-            <subsection xml:id="subsection-instep">
-                <title>InSTEP</title>
-                
-                <ul>
-                    <li><em>Cost</em>: Completely FREE</li>
-                    <li><em>Grades</em>: 6-12</li>
-                    <li><em>Approach</em>: Personalized professional learning for teachers and instructional coaches</li>
-                    <li><em>Technology</em>: Focus on CODAP with occasional use of iNZight Lite and spreadsheets</li>
-                    <li><em>Special Features</em>: Customized recommendations and choice of learning modules; multiple modalities (online, face-to-face, hybrid)</li>
-                </ul>
-            </subsection>
+        <subsection xml:id="subsection-instep">
+            <title>InSTEP</title>
+            
+            <p>
+                <alert>Cost</alert>: Completely FREE
+            </p>
+            <p>
+                <alert>Grades</alert>: 6-12
+            </p>
+            <p>
+                <alert>Approach</alert>: Personalized professional learning for teachers and instructional coaches
+            </p>
+            <p>
+                <alert>Technology</alert>: Focus on CODAP with occasional use of iNZight Lite and spreadsheets
+            </p>
+            <p>
+                <alert>Special Features</alert>: Customized recommendations and choice of learning modules; multiple modalities (online, face-to-face, hybrid)
+            </p>
+        </subsection>
 
-        </section>
+    </section>
 
-        <section xml:id="section-higher-ed">
-            <title>Higher Education and Community College</title>
+    <section xml:id="section-higher-ed">
+        <title>Higher Education and Community College</title>
 
-            <subsection xml:id="subsection-data8">
-                <title>Data 8 (UC Berkeley)</title>
-                
-                <ul>
-                    <li><em>Cost</em>: Free online textbook and summer workshop; districts pay for infrastructure</li>
-                    <li><em>Level</em>: College/Community College + some high school</li>
-                    <li><em>Approach</em>: Combines statistics and computer science principles</li>
-                    <li><em>Technology</em>: Python with JupyterHub infrastructure required</li>
-                    <li><em>Special Features</em>: Very technical implementation; modules can be integrated into other courses</li>
-                </ul>
-            </subsection>
+        <subsection xml:id="subsection-data8">
+            <title>Data 8 (UC Berkeley)</title>
+            
+            <p>
+                <alert>Cost</alert>: Free online textbook and summer workshop; districts pay for infrastructure
+            </p>
+            <p>
+                <alert>Level</alert>: College/Community College + some high school
+            </p>
+            <p>
+                <alert>Approach</alert>: Combines statistics and computer science principles
+            </p>
+            <p>
+                <alert>Technology</alert>: Python with JupyterHub infrastructure required
+            </p>
+            <p>
+                <alert>Special Features</alert>: Very technical implementation; modules can be integrated into other courses
+            </p>
+        </subsection>
 
-        </section>
+    </section>
 
-    </chapter>
+</chapter>

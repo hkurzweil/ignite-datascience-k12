@@ -1,167 +1,194 @@
- <chapter xml:id="chapter-learning-progressions">
-        <title>Data Science Learning Progressions: A Framework for Success</title>
+<chapter xml:id="chapter-learning-progressions">
+    <title>Data Science Learning Progressions: A Framework for Success</title>
 
-        <introduction>
-            <p>
-                The Data Science Learning Progressions provide a comprehensive framework for what students should know and be able to do at each grade level. Rather than a rigid sequence, these progressions offer flexibility while ensuring students develop essential skills systematically from kindergarten through 12th grade.
-            </p>
-        </introduction>
+    <introduction>
+        <p>
+            The Data Science Learning Progressions provide a comprehensive framework for what students should know and be able to do at each grade level. Rather than a rigid sequence, these progressions offer flexibility while ensuring students develop essential skills systematically from kindergarten through 12th grade.
+        </p>
+    </introduction>
 
-        <section xml:id="section-framework-overview">
-            <title>Framework Overview</title>
-            
-            <p>
-                The learning progressions are organized into five interconnected strands that work together to develop complete data science literacy:
-            </p>
+    <section xml:id="section-framework-overview">
+        <title>Framework Overview</title>
+        
+        <p>
+            The learning progressions are organized into five interconnected strands that work together to develop complete data science literacy:
+        </p>
 
-            <ul>
-                <li><em>Strand A: Dispositions and Responsibility</em></li>
-                <li><em>Strand B: Creation and Curation</em></li>
-                <li><em>Strand C: Analysis and Modeling Techniques</em></li>
-                <li><em>Strand D: Interpreting Problems and Results</em></li>
-                <li><em>Strand E: Visualization and Communication</em></li>
-            </ul>
+        <p>
+            <alert>Strand A: Data Dispositions and Responsibility</alert> | <alert>Strand B: Creation and Curation</alert> | <alert>Strand C: Analysis and Modeling Techniques</alert> | <alert>Strand D: Interpreting Problems and Results</alert> | <alert>Strand E: Visualization and Communication</alert>
+        </p>
 
-            <p>
-                Each strand progresses from foundational concepts in early elementary through advanced applications in high school, with opportunities for acceleration and depth based on student readiness and interest.
-            </p>
-        </section>
+        <p>
+            Each strand progresses from foundational concepts in early elementary through advanced applications in high school, with opportunities for acceleration and depth based on student readiness and interest.
+        </p>
+    </section>
 
-        <section xml:id="section-strand-a">
-            <title>Strand A: Dispositions and Responsibility</title>
-            
-            <p>
-                This foundational strand focuses on understanding what data is and developing responsible approaches to working with it. Students learn that data takes many forms, comes from human decisions, and carries both opportunities and responsibilities.
-            </p>
+    <section xml:id="section-strand-a">
+        <title>Strand A: Data Dispositions and Responsibility</title>
+        
+        <p>
+            This foundational strand focuses on understanding what data is and developing responsible approaches to working with it. Students learn that data takes many forms, comes from human decisions, and carries both opportunities and responsibilities.
+        </p>
 
-            <p><em>Key Components:</em></p>
-            <ul>
-                <li><em>Nature of Data</em>: Understanding data types, sources, variability, and the role of AI</li>
-                <li><em>Data Ethics and Responsibilities</em>: Recognizing bias, considering privacy, and understanding the power of data</li>
-                <li><em>Investigative Dispositions</em>: Developing curiosity, iteration skills, and agency in data work</li>
-            </ul>
+        <p><alert>Key Components:</alert></p>
+        <p>
+            <alert>Nature of Data</alert>: Understanding data types, sources, variability, and the role of AI
+        </p>
+        <p>
+            <alert>Data Ethics and Responsibilities</alert>: Recognizing bias, considering privacy, and understanding the power of data
+        </p>
+        <p>
+            <alert>Investigative Dispositions</alert>: Developing curiosity, iteration skills, and agency in data work
+        </p>
 
-            <p>
-                From recognizing that <q>data can answer questions</q> in kindergarten to <q>evaluating AI model bias</q> in high school, this strand ensures students become thoughtful, ethical data citizens.
-            </p>
-        </section>
+        <p>
+            From recognizing that <q>data can answer questions</q> in kindergarten to <q>evaluating AI model bias</q> in high school, this strand ensures students become thoughtful, ethical data citizens.
+        </p>
+    </section>
 
-        <section xml:id="section-strand-b">
-            <title>Strand B: Creation and Curation</title>
-            
-            <p>
-                This strand develops skills in collecting, organizing, and preparing data for analysis. Students learn that real-world data is often messy and requires careful curation to be useful.
-            </p>
+    <section xml:id="section-strand-b">
+        <title>Strand B: Creation and Curation</title>
+        
+        <p>
+            This strand develops skills in collecting, organizing, and preparing data for analysis. Students learn that real-world data is often messy and requires careful curation to be useful.
+        </p>
 
-            <p><em>Key Components:</em></p>
-            <ul>
-                <li><em>Organization and Processing</em>: Cleaning data, creating structures, and transforming information</li>
-                <li><em>Designing for Data Collection</em>: Planning investigations and choosing appropriate methods</li>
-                <li><em>Measurement and Datafication</em>: Creating and evaluating data collection processes</li>
-                <li><em>Complexity of Data</em>: Working with increasingly sophisticated datasets</li>
-            </ul>
+        <p><alert>Key Components:</alert></p>
+        <p>
+            <alert>Organization and Processing</alert>: Cleaning data, creating structures, and transforming information
+        </p>
+        <p>
+            <alert>Designing for Data Collection</alert>: Planning investigations and choosing appropriate methods
+        </p>
+        <p>
+            <alert>Measurement and Datafication</alert>: Creating and evaluating data collection processes
+        </p>
+        <p>
+            <alert>Complexity of Data</alert>: Working with increasingly sophisticated datasets
+        </p>
 
-            <p>
-                Students progress from simple data collection activities to designing complex research studies and managing large, multi-variable datasets.
-            </p>
-        </section>
+        <p>
+            Students progress from simple data collection activities to designing complex research studies and managing large, multi-variable datasets.
+        </p>
+    </section>
 
-        <section xml:id="section-strand-c">
-            <title>Strand C: Analysis and Modeling Techniques</title>
-            
-            <p>
-                This strand develops technical skills for summarizing, analyzing, and modeling data. Students learn to identify patterns, understand relationships, and use appropriate tools for different types of analysis.
-            </p>
+    <section xml:id="section-strand-c">
+        <title>Strand C: Analysis and Modeling Techniques</title>
+        
+        <p>
+            This strand develops technical skills for summarizing, analyzing, and modeling data. Students learn to identify patterns, understand relationships, and use appropriate tools for different types of analysis.
+        </p>
 
-            <p><em>Key Components:</em></p>
-            <ul>
-                <li><em>Summarizing Data</em>: Measures of center, spread, shape, and frequency</li>
-                <li><em>Identifying Patterns and Relationships</em>: Comparing variables, understanding distributions, analyzing non-traditional data</li>
-                <li><em>Variability in Data</em>: Describing, comparing, and understanding sources of variability</li>
-                <li><em>Digital Tools of Data Analysis</em>: Selecting and using appropriate technology ethically</li>
-                <li><em>Models of Data</em>: Understanding and creating models to represent and predict</li>
-            </ul>
+        <p><alert>Key Components:</alert></p>
+        <p>
+            <alert>Summarizing Data</alert>: Measures of center, spread, shape, and frequency
+        </p>
+        <p>
+            <alert>Identifying Patterns and Relationships</alert>: Comparing variables, understanding distributions, analyzing non-traditional data
+        </p>
+        <p>
+            <alert>Variability in Data</alert>: Describing, comparing, and understanding sources of variability
+        </p>
+        <p>
+            <alert>Digital Tools of Data Analysis</alert>: Selecting and using appropriate technology ethically
+        </p>
+        <p>
+            <alert>Models of Data</alert>: Understanding and creating models to represent and predict
+        </p>
 
-            <p>
-                From sorting objects by characteristics to building machine learning models, students develop sophisticated analytical capabilities.
-            </p>
-        </section>
+        <p>
+            From sorting objects by characteristics to building machine learning models, students develop sophisticated analytical capabilities.
+        </p>
+    </section>
 
-        <section xml:id="section-strand-d">
-            <title>Strand D: Interpreting Problems and Results</title>
-            
-            <p>
-                This strand focuses on making sense of data analysis results and connecting them to real-world contexts. Students learn to justify claims, consider limitations, and understand when and how results can be generalized.
-            </p>
+    <section xml:id="section-strand-d">
+        <title>Strand D: Interpreting Problems and Results</title>
+        
+        <p>
+            This strand focuses on making sense of data analysis results and connecting them to real-world contexts. Students learn to justify claims, consider limitations, and understand when and how results can be generalized.
+        </p>
 
-            <p><em>Key Components:</em></p>
-            <ul>
-                <li><em>Making and Justifying Claims</em>: Using probabilistic language, understanding significance, distinguishing correlation from causation</li>
-                <li><em>Problem Identification and Question Formation</em>: Creating testable questions and acknowledging limitations</li>
-                <li><em>Generalization</em>: Understanding when and how results apply beyond the original context</li>
-            </ul>
+        <p><alert>Key Components:</alert></p>
+        <p>
+            <alert>Making and Justifying Claims</alert>: Using probabilistic language, understanding significance, distinguishing correlation from causation
+        </p>
+        <p>
+            <alert>Problem Identification and Question Formation</alert>: Creating testable questions and acknowledging limitations
+        </p>
+        <p>
+            <alert>Generalization</alert>: Understanding when and how results apply beyond the original context
+        </p>
 
-            <p>
-                Students develop critical thinking skills essential for navigating our data-rich world, from simple pattern recognition to sophisticated statistical reasoning.
-            </p>
-        </section>
+        <p>
+            Students develop critical thinking skills essential for navigating our data-rich world, from simple pattern recognition to sophisticated statistical reasoning.
+        </p>
+    </section>
 
-        <section xml:id="section-strand-e">
-            <title>Strand E: Visualization and Communication</title>
-            
-            <p>
-                This strand develops skills in creating and interpreting visual representations of data and communicating findings effectively to different audiences.
-            </p>
+    <section xml:id="section-strand-e">
+        <title>Strand E: Visualization and Communication</title>
+        
+        <p>
+            This strand develops skills in creating and interpreting visual representations of data and communicating findings effectively to different audiences.
+        </p>
 
-            <p><em>Key Components:</em></p>
-            <ul>
-                <li><em>Representations and Dynamic Visualizations</em>: Creating clear, purpose-driven visualizations and developing graphical literacy</li>
-                <li><em>Data Storytelling</em>: Connecting narratives with data and adapting communication for different audiences</li>
-                <li><em>Acting on Data to Benefit Society</em>: Using data for advocacy, civic engagement, and positive change</li>
-            </ul>
+        <p><alert>Key Components:</alert></p>
+        <p>
+            <alert>Representations and Dynamic Visualizations</alert>: Creating clear, purpose-driven visualizations and developing graphical literacy
+        </p>
+        <p>
+            <alert>Data Storytelling</alert>: Connecting narratives with data and adapting communication for different audiences
+        </p>
+        <p>
+            <alert>Acting on Data to Benefit Society</alert>: Using data for advocacy, civic engagement, and positive change
+        </p>
 
-            <p>
-                From simple picture graphs to complex interactive dashboards, students learn to communicate data insights that drive understanding and action.
-            </p>
-        </section>
+        <p>
+            From simple picture graphs to complex interactive dashboards, students learn to communicate data insights that drive understanding and action.
+        </p>
+    </section>
 
-        <section xml:id="section-integration">
-            <title>How the Strands Work Together</title>
-            
-            <p>
-                The power of this framework lies in how the strands integrate and reinforce each other. A typical data science investigation might involve:
-            </p>
+    <section xml:id="section-integration">
+        <title>How the Strands Work Together</title>
+        
+        <p>
+            The power of this framework lies in how the strands integrate and reinforce each other. A typical data science investigation might involve:
+        </p>
 
-            <ol>
-                <li><em>Strand A</em>: Considering ethical implications and developing investigative questions</li>
-                <li><em>Strand B</em>: Collecting and preparing appropriate data</li>
-                <li><em>Strand C</em>: Analyzing data using appropriate tools and techniques</li>
-                <li><em>Strand D</em>: Interpreting results and considering their validity and limitations</li>
-                <li><em>Strand E</em>: Communicating findings effectively to drive action</li>
-            </ol>
+        <p>
+            <alert>Step 1 - Strand A</alert>: Considering ethical implications and developing investigative questions
+        </p>
+        <p>
+            <alert>Step 2 - Strand B</alert>: Collecting and preparing appropriate data
+        </p>
+        <p>
+            <alert>Step 3 - Strand C</alert>: Analyzing data using appropriate tools and techniques
+        </p>
+        <p>
+            <alert>Step 4 - Strand D</alert>: Interpreting results and considering their validity and limitations
+        </p>
+        <p>
+            <alert>Step 5 - Strand E</alert>: Communicating findings effectively to drive action
+        </p>
 
-            <p>
-                This integrated approach ensures students don't just learn isolated skills, but develop the complete toolkit needed for ethical, effective data science practice.
-            </p>
-        </section>
+        <p>
+            This integrated approach ensures students don't just learn isolated skills, but develop the complete toolkit needed for ethical, effective data science practice.
+        </p>
+    </section>
 
-        <section xml:id="section-implementation-flexibility">
-            <title>Implementation Flexibility</title>
-            
-            <p>
-                The learning progressions are designed to support multiple implementation approaches:
-            </p>
+    <section xml:id="section-implementation-flexibility">
+        <title>Implementation Flexibility</title>
+        
+        <p>
+            The learning progressions are designed to support multiple implementation approaches:
+        </p>
 
-            <ul>
-                <li><em>Dedicated Courses</em>: Full data science courses can systematically address all strands</li>
-                <li><em>Integrated Modules</em>: Individual strands or concepts can enhance existing subject areas</li>
-                <li><em>Cross-Curricular Projects</em>: Real-world investigations can naturally incorporate multiple strands</li>
-                <li><em>Differentiated Instruction</em>: Students can work at appropriate levels within each strand</li>
-            </ul>
+        <p>
+            <alert>Dedicated Courses</alert>: Full data science courses can systematically address all strands. <alert>Integrated Modules</alert>: Individual strands or concepts can enhance existing subject areas. <alert>Cross-Curricular Projects</alert>: Real-world investigations can naturally incorporate multiple strands. <alert>Differentiated Instruction</alert>: Students can work at appropriate levels within each strand.
+        </p>
 
-            <p>
-                This flexibility ensures that every school can find an approach that fits their context while still providing students with essential data science skills.
-            </p>
-        </section>
+        <p>
+            This flexibility ensures that every school can find an approach that fits their context while still providing students with essential data science skills.
+        </p>
+    </section>
 
-    </chapter>
+</chapter>
