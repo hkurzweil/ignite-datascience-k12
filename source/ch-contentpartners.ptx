@@ -96,6 +96,46 @@
             </p>
         </subsection>
 
+        <subsection xml:id="subsection-data8">
+            <title>Data 6 and Data 8 (UC Berkeley)</title>
+            
+            <p>
+                <alert>Cost</alert>: Free online textbook and summer workshop; districts pay for infrastructure
+            </p>
+            <p>
+                <alert>Level</alert>: College/Community College and upper level high school 
+            </p>
+            <p>
+                <alert>Approach</alert>: Combines statistics and computer science principles. Data 6 covers introduction to CS and Data Science while the Data 8 course covers an intro to CS and Data Science as well as an intro to Statistics.
+            </p>
+            <p>
+                <alert>Technology</alert>: Python with JupyterHub infrastructure required
+            </p>
+            <p>
+                <alert>Special Features</alert>: Very technical implementation; modules can be integrated into other courses
+            </p>
+        </subsection>
+
+                <subsection xml:id="subsection-codeva">
+            <title>CodeVA (Virginia)</title>
+            
+            <p>
+                <alert>Cost</alert>: Completely free including professional development for Virginia educators
+            </p>
+            <p>
+                <alert>Grades</alert>: High school Data Science course alignment
+            </p>
+            <p>
+                <alert>Approach</alert>: Three course sequences through project-based learning
+            </p>
+            <p>
+                <alert>Technology</alert>: <q>Unplugged</q> activities, CODAP, and Python
+            </p>
+            <p>
+                <alert>Special Features</alert>: Developed with Virginia Department of Education support and aligned to Virginia's Data Science standards
+            </p>
+        </subsection>
+
     </section>
 
     <section xml:id="section-modular">
@@ -106,6 +146,29 @@
                 Perfect for schools wanting to integrate data science into existing courses without major restructuring:
             </p>
         </introduction>
+
+        <subsection xml:id="subsection-bootstrap">
+            <title>Bootstrap</title>
+            
+            <p>
+                <alert>Cost</alert>: Free curriculum and software; Professional Development $1800 per teacher
+            </p>
+            <p>
+                <alert>Grades</alert>: 5-12
+            </p>
+            <p>
+                <alert>Approach</alert>: Research-based, integrated Computer Science and Data Science modules
+            </p>
+            <p>
+                <alert>Technology</alert>: Pyret (Python-like language designed for education)
+            </p>
+            <p>
+                <alert>Special Features</alert>: Can be implemented as standalone course OR integrated into existing Math, Science, History, or CS classes
+            </p>
+            <p>
+                <alert>Support</alert>: Comprehensive materials including lesson plans, slides, workbooks, answer keys, and datasets
+            </p>
+        </subsection>
 
         <subsection xml:id="subsection-skew">
             <title>Skew The Script</title>
@@ -147,37 +210,6 @@
             </p>
         </subsection>
 
-        <subsection xml:id="subsection-dataspire">
-            <title>DataSpire</title>
-            
-            <p>
-                <alert>Cost</alert>: Free strategies via website/YouTube; $5-20 for digital resources; $25-80 for asynchronous PL
-            </p>
-            <p>
-                <alert>Grades</alert>: K-12 + Pre-service
-            </p>
-            <p>
-                <alert>Approach</alert>: Classroom-ready strategies to integrate data literacy into existing curriculum
-            </p>
-            <p>
-                <alert>Technology</alert>: Platform agnostic—works with whatever teachers already have
-            </p>
-            <p>
-                <alert>Special Features</alert>: Coordinated professional learning across subject areas and grade bands
-            </p>
-        </subsection>
-
-    </section>
-
-    <section xml:id="section-platforms">
-        <title>Platform and Tool-Based Solutions</title>
-        
-        <introduction>
-            <p>
-                For schools seeking comprehensive digital platforms that support data science learning:
-            </p>
-        </introduction>
-
         <subsection xml:id="subsection-dataclassroom">
             <title>DataClassroom</title>
             
@@ -218,35 +250,53 @@
             </p>
         </subsection>
 
-    </section>
-
-    <section xml:id="section-state-specific">
-        <title>State-Specific Solutions</title>
-
-        <subsection xml:id="subsection-codeva">
-            <title>CodeVA (Virginia)</title>
+        <subsection xml:id="subsection-youcubed">
+            <title>Youcubed</title>
             
             <p>
-                <alert>Cost</alert>: Completely free including professional development for Virginia educators
+                <alert>Cost</alert>: Free curriculum and technology; fee-based professional development for high school course
             </p>
             <p>
-                <alert>Grades</alert>: High school Data Science course alignment
+                <alert>Grades</alert>: K-12 (with dedicated high school course option)
             </p>
             <p>
-                <alert>Approach</alert>: Three course sequences through project-based learning
+                <alert>Approach</alert>: Project-based learning with both full course and individual lesson options
             </p>
             <p>
-                <alert>Technology</alert>: <q>Unplugged</q> activities, CODAP, and Python
-            </p>
-            <p>
-                <alert>Special Features</alert>: Developed with Virginia Department of Education support and aligned to Virginia's Data Science standards
+                <alert>Technology</alert>: CODAP, Google Sheets, Google Data Commons, Google Colab, EduBlocks, Tableau Cloud
             </p>
         </subsection>
 
     </section>
 
-    <section xml:id="section-pd-focused">
-        <title>Professional Development Focused</title>
+    <section xml:id="section-platforms">
+        <title>Professional Development Platforms</title>
+        
+        <introduction>
+            <p>
+                A lot of the full course and modular integration platforms already mentioned have PD specific to their tools and curricula. However, we also work with providers who offer more targeted professional development about the field of data science:
+            </p>
+        </introduction>
+
+       <subsection xml:id="subsection-dataspire">
+            <title>DataSpire</title>
+            
+            <p>
+                <alert>Cost</alert>: Free strategies via website/YouTube; $5-20 for digital resources; $25-80 for asynchronous PL
+            </p>
+            <p>
+                <alert>Grades</alert>: K-12 + Pre-service
+            </p>
+            <p>
+                <alert>Approach</alert>: Classroom-ready strategies to integrate data literacy into existing curriculum
+            </p>
+            <p>
+                <alert>Technology</alert>: Platform agnostic—works with whatever teachers already have
+            </p>
+            <p>
+                <alert>Special Features</alert>: Coordinated professional learning across subject areas and grade bands
+            </p>
+        </subsection>
 
         <subsection xml:id="subsection-instep">
             <title>InSTEP</title>
@@ -270,26 +320,81 @@
 
     </section>
 
-    <section xml:id="section-higher-ed">
-        <title>Higher Education and Community College</title>
+    <section xml:id="section-tools">
+        <title>Data Science Tools</title>
+        
+        <introduction>
+            <p>
+                While many curriculum providers offer their own integrated tools, there are also standalone platforms that can be used across multiple curricula and subject areas. These versatile tools can enhance any data science learning experience:
+            </p>
+        </introduction>
 
-        <subsection xml:id="subsection-data8">
-            <title>Data 8 (UC Berkeley)</title>
+        <subsection xml:id="subsection-codap-tools">
+            <title>CODAP</title>
             
             <p>
-                <alert>Cost</alert>: Free online textbook and summer workshop; districts pay for infrastructure
+                <alert>Cost</alert>: Completely FREE and open source
             </p>
             <p>
-                <alert>Level</alert>: College/Community College + some high school
+                <alert>Grades</alert>: 5-14 (K-12 and college)
             </p>
             <p>
-                <alert>Approach</alert>: Combines statistics and computer science principles
+                <alert>Approach</alert>: Web-based data analysis platform designed for exploratory data science learning
             </p>
             <p>
-                <alert>Technology</alert>: Python with JupyterHub infrastructure required
+                <alert>Technology</alert>: Browser-based with drag-and-drop interface; supports CSV, text files, and data plugins
             </p>
             <p>
-                <alert>Special Features</alert>: Very technical implementation; modules can be integrated into other courses
+                <alert>Special Features</alert>: Dynamically linked visualizations (graphs, maps, tables); extensive plugin ecosystem; works across all subjects and curriculum; built on decades of research in interactive learning environments
+            </p>
+            <p>
+                <alert>Support</alert>: Active community forums, sample datasets, tutorials, and comprehensive documentation
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsection-jupyter">
+            <title>Jupyter Everywhere</title>
+            
+            <p>
+                <alert>Cost</alert>: FREE software and eliminates infrastructure costs (cloud hosting, JupyterHub setup)
+            </p>
+            <p>
+                <alert>Grades</alert>: 6-12 and higher education
+            </p>
+            <p>
+                <alert>Approach</alert>: Interactive computing notebooks that combine live code, visualizations, and narrative text
+            </p>
+            <p>
+                <alert>Technology</alert>: Supports 40+ programming languages including Python, R, Julia, and Scala
+            </p>
+            <p>
+                <alert>Special Features</alert>: Industry-standard tool used in data science careers; enables reproducible research; seamless integration with big data tools; collaborative sharing capabilities
+            </p>
+            <p>
+                <alert>Support</alert>: Large open source community; extensive documentation; integration with platforms like Google Colab and AWS
+            </p>
+        </subsection>
+
+        <subsection xml:id="subsection-slowreveal">
+            <title>Slow Reveal Graphs</title>
+            
+            <p>
+                <alert>Cost</alert>: Completely FREE instructional routine and resources
+            </p>
+            <p>
+                <alert>Grades</alert>: K-12 and adult education
+            </p>
+            <p>
+                <alert>Approach</alert>: Pedagogical technique for gradually unveiling graph components to promote data sensemaking
+            </p>
+            <p>
+                <alert>Technology</alert>: Platform agnostic—works with any presentation software or physical materials
+            </p>
+            <p>
+                <alert>Special Features</alert>: Cross-curricular applications (math, science, social studies); develops critical thinking about data sources and interpretation; increases access without sacrificing rigor
+            </p>
+            <p>
+                <alert>Support</alert>: Extensive library of ready-made slow reveal sequences; professional development resources; active educator community via SlowRevealGraphs.com
             </p>
         </subsection>
 
