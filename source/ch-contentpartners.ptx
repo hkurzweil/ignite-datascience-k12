@@ -39,6 +39,26 @@
             </p>
         </subsection>
 
+        <subsection xml:id="subsection-codeva">
+            <title>CodeVA (Virginia)</title>
+            
+            <p>
+                <alert>Cost</alert>: Completely free including professional development for Virginia educators
+            </p>
+            <p>
+                <alert>Grades</alert>: High school Data Science course alignment
+            </p>
+            <p>
+                <alert>Approach</alert>: Three course sequences through project-based learning
+            </p>
+            <p>
+                <alert>Technology</alert>: <q>Unplugged</q> activities, CODAP, and Python
+            </p>
+            <p>
+                <alert>Special Features</alert>: Developed with Virginia Department of Education support and aligned to Virginia's Data Science standards
+            </p>
+        </subsection>
+
         <subsection xml:id="subsection-coursekata">
             <title>CourseKata</title>
             
@@ -56,6 +76,25 @@
             </p>
             <p>
                 <alert>Special Features</alert>: Interactive online textbook with real-time progress tracking and LMS integration
+            </p>
+        </subsection>
+         <subsection xml:id="subsection-data8">
+            <title>Data 6 and Data 8 (UC Berkeley)</title>
+            
+            <p>
+                <alert>Cost</alert>: Free online textbook and summer workshop; districts pay for infrastructure
+            </p>
+            <p>
+                <alert>Level</alert>: College/Community College and upper level high school 
+            </p>
+            <p>
+                <alert>Approach</alert>: Combines statistics and computer science principles. Data 6 covers introduction to CS and Data Science while the Data 8 course covers an intro to CS and Data Science as well as an intro to Statistics.
+            </p>
+            <p>
+                <alert>Technology</alert>: Python with JupyterHub infrastructure required
+            </p>
+            <p>
+                <alert>Special Features</alert>: Very technical implementation; modules can be integrated into other courses
             </p>
         </subsection>
 
@@ -93,46 +132,6 @@
             </p>
             <p>
                 <alert>Technology</alert>: CODAP, Google Sheets, Google Data Commons, Google Colab, EduBlocks, Tableau Cloud
-            </p>
-        </subsection>
-
-        <subsection xml:id="subsection-data8">
-            <title>Data 6 and Data 8 (UC Berkeley)</title>
-            
-            <p>
-                <alert>Cost</alert>: Free online textbook and summer workshop; districts pay for infrastructure
-            </p>
-            <p>
-                <alert>Level</alert>: College/Community College and upper level high school 
-            </p>
-            <p>
-                <alert>Approach</alert>: Combines statistics and computer science principles. Data 6 covers introduction to CS and Data Science while the Data 8 course covers an intro to CS and Data Science as well as an intro to Statistics.
-            </p>
-            <p>
-                <alert>Technology</alert>: Python with JupyterHub infrastructure required
-            </p>
-            <p>
-                <alert>Special Features</alert>: Very technical implementation; modules can be integrated into other courses
-            </p>
-        </subsection>
-
-                <subsection xml:id="subsection-codeva">
-            <title>CodeVA (Virginia)</title>
-            
-            <p>
-                <alert>Cost</alert>: Completely free including professional development for Virginia educators
-            </p>
-            <p>
-                <alert>Grades</alert>: High school Data Science course alignment
-            </p>
-            <p>
-                <alert>Approach</alert>: Three course sequences through project-based learning
-            </p>
-            <p>
-                <alert>Technology</alert>: <q>Unplugged</q> activities, CODAP, and Python
-            </p>
-            <p>
-                <alert>Special Features</alert>: Developed with Virginia Department of Education support and aligned to Virginia's Data Science standards
             </p>
         </subsection>
 
@@ -189,28 +188,7 @@
                 <alert>Special Features</alert>: Lessons ready to use immediately without new technology or training
             </p>
         </subsection>
-
-        <subsection xml:id="subsection-tuva">
-            <title>Tuva</title>
-            
-            <p>
-                <alert>Cost</alert>: Free and paid versions available
-            </p>
-            <p>
-                <alert>Grades</alert>: 2-12
-            </p>
-            <p>
-                <alert>Approach</alert>: Supplements core Science, Math, or Social Studies curriculum with real-world datasets and visualization tools
-            </p>
-            <p>
-                <alert>Technology</alert>: Web application with extensive LMS integrations
-            </p>
-            <p>
-                <alert>Special Features</alert>: Three programs (Tuva Jr. for grades 2-5, Tuva for 6-12, Tuva 3D Science Assessments)
-            </p>
-        </subsection>
-
-        <subsection xml:id="subsection-dataclassroom">
+<subsection xml:id="subsection-dataclassroom">
             <title>DataClassroom</title>
             
             <p>
@@ -250,6 +228,26 @@
             </p>
         </subsection>
 
+        <subsection xml:id="subsection-tuva">
+            <title>Tuva</title>
+            
+            <p>
+                <alert>Cost</alert>: Free and paid versions available
+            </p>
+            <p>
+                <alert>Grades</alert>: 2-12
+            </p>
+            <p>
+                <alert>Approach</alert>: Supplements core Science, Math, or Social Studies curriculum with real-world datasets and visualization tools
+            </p>
+            <p>
+                <alert>Technology</alert>: Web application with extensive LMS integrations
+            </p>
+            <p>
+                <alert>Special Features</alert>: Three programs (Tuva Jr. for grades 2-5, Tuva for 6-12, Tuva 3D Science Assessments)
+            </p>
+        </subsection>
+
         <subsection xml:id="subsection-youcubed2">
             <title>Youcubed</title>
             
@@ -279,7 +277,7 @@
         </introduction>
 
        <subsection xml:id="subsection-dataspire">
-            <title>DataSpire</title>
+            <title>Dataspire</title>
             
             <p>
                 <alert>Cost</alert>: Free strategies via website/YouTube; $5-20 for digital resources; $25-80 for asynchronous PL
